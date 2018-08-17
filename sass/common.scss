@@ -65,6 +65,10 @@ i {
 	*zoom: 1;
 }
 
+@function pr($p) {
+    @return $p/121+rem;
+}
+
 
 .container {
     height: 100%;
