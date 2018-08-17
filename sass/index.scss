@@ -1,8 +1,6 @@
 @import "common.scss";
 
-@function pr($p) {
-    @return $p/121+rem;
-}
+
 
 html,body {
     width: 100%;;
