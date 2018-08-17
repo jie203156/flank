@@ -5,8 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <!-- 导入jQuery模板 -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 导入mui插件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <!-- 导入字体图标 -->
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- 导入bootstrap插件 -->
+    <!-- <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 导入css模板 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+
 </head>
 <body>
     
+    <div class="container">
+
+        <!-- 头部制作 -->
+        <div class="header">
+            <div class="topNav">
+                <a href="./index.html"><img src="./images/TB2cMR0aQUmBKNjSZFOXXab2XXa_!!690311.png" alt=""></a>
+                <a href="#" class="loading"><img src="./images/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt=""></a>
+            </div>
+            <div class="search">
+                <input type="text"  placeholder="请输入你想比价的商品">
+                <button class="mui-btn mui-btn-primary searchBtn">搜索</button>
+            </div>
+        </div>
+        <!-- 中间内容制作 -->
+        <div class="main">
+            <div class="getindexmenu">
+                <!-- <div><a href="#"><img src="./images/ic_bcj.png" alt=""><span>白菜价</span></a></div> -->
+            </div>    
+        </div>
+
+        <!-- 尾部制作 -->
+        <div class="footer">
+            <div class="btnS">
+                <button >登录</button>
+                <button >注册</button>
+                <button ><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
+            </div>
+            <div class="footerTxt">
+                <p><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a> &nbsp慢慢买手机版 -- 掌上比价平台</p>
+                <p><a href="./index.html" class="web">m.manmanbuy.com</a></p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
+
+<script>
+    // rem模板
+    document.querySelector('html').style.fontSize = screen.width / 10 + 'px';
+</script>
+
+<script type="text/html" id="getmenu">
+{{each result v}}
+
+<div class="img" ><a href="#">{{#v.img}}<span>{{v.name}}</span></a></div>
+{{/each}}
+
+</script>
