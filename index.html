@@ -30,11 +30,10 @@
 </head>
 
 <body>
-    <div class="mui-scroll-wrapper">
-        <div class="mui-scroll">
-            <!--这里放置真实显示的DOM内容-->
-            <div class="container">
-
+    <div class="container">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--这里放置真实显示的DOM内容-->
                 <!-- 头部制作 -->
                 <div class="header">
                     <div class="topNav">
@@ -66,9 +65,9 @@
                     <!-- 商品列表 -->
                     <div class="products">
                         <ul>
-                            <li class="product">
+                            <!--<li class="product">
                                 <a href="#">
-                                    <div class="price"><img src="images/sqkb_sources_static_img_news_2016_01bbdeaab8c24230957c3ce7015f51f57ada7c33.jpg"></div>
+                                    <div class="price"><img src="images/sqkb_sources_static_img_news_2016_01bbdeaab8c24230957c3ce7015f51f57ada7c33.jpg">
                                     <div class="info">
                                         <div class="title">KONKA 康佳 A55U 55英寸 4K智能LED液晶电视 <span>1869.00元</span></div>
                                         <div class="other">
@@ -77,27 +76,26 @@
                                         </div>
                                     </div>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
+                </div>
 
-                    <!-- 尾部制作 -->
-                    <div class="footer">
-                        <div class="btnS">
-                            <button>登录</button>
-                            <button>注册</button>
-                            <button><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
-                        </div>
-                        <div class="footerTxt">
-                            <p><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a> &nbsp慢慢买手机版 -- 掌上比价平台</p>
-                            <p><a href="./index.html" class="web">m.manmanbuy.com</a></p>
-                        </div>
+                <!-- 尾部制作 -->
+                <div class="footer">
+                    <div class="btnS">
+                        <button>登录</button>
+                        <button>注册</button>
+                        <button><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
+                    </div>
+                    <div class="footerTxt">
+                        <p><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a> &nbsp慢慢买手机版 -- 掌上比价平台</p>
+                        <p><a href="./index.html" class="web">m.manmanbuy.com</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
@@ -106,11 +104,29 @@
     // rem模板
     document.querySelector('html').style.fontSize = screen.width / 10 + 'px';
 </script>
-
+<!-- 导航栏模板 -->
 <script type="text/html" id="getmenu">
     {{each result v}}
 
     <div class="img"><a href="#">{{@v.img}}<span>{{v.name}}</span></a></div>
     {{/each}}
 
+</script>
+
+<!-- 商品模板 -->
+<script type="text/html" id="productlist">
+    {{each result v i}}
+    <li class="product" data-id="{{v.productId}}">
+        <a href="#">
+            <div class="price">{{@v.productImgSm}}</div>
+            <div class="info">
+                <div class="title">{{v.productName}} <span>1869.00元</span></div>
+                <div class="other">
+                    <span class="source">{{v.productFrom}} | {{v.productTime}}</span>
+                    <span class="comment"><i class="mui-icon mui-icon-comment"></i>{{v.productComCount}}</span>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
 </script>

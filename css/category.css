@@ -67,6 +67,8 @@ i {
 .container {
   height: 100%;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 .container .header .topNav {
   height: 1.2396694215rem;
@@ -114,7 +116,6 @@ i {
   border: none;
 }
 .container .main {
-  height: 16.5289256198rem;
   background-color: #f2f2f2;
 }
 .container .footer {
