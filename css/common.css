@@ -93,6 +93,7 @@ i {
   display: flex;
   padding: 0.2314049587rem 0.2231404959rem;
   position: relative;
+  background-color: #fff;
 }
 .container .header .search input {
   height: 0.7438016529rem;
