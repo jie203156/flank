@@ -173,6 +173,37 @@ html, body {
   font-size: 13px;
   color: #999999;
 }
+.main .content1 .mui-table-view-cell {
+  display: flex;
+}
+.main .content1 .mui-table-view-cell .left {
+  flex-basis: 100px;
+}
+.main .content1 .mui-table-view-cell .left img {
+  height: 100px;
+}
+.main .content1 .mui-table-view-cell .right {
+  padding-left: 2%;
+  flex: 1;
+}
+.main .content1 .mui-table-view-cell .right .chanpin {
+  height: 45px;
+}
+.main .content1 .mui-table-view-cell .right .jiaxing {
+  display: flex;
+  justify-content: space-between;
+}
+.main .content1 .mui-table-view-cell .right .jiaxing .moni {
+  font-size: 20px;
+  color: orange;
+}
+.main .content1 .mui-table-view-cell .right .jiaxing .xing img {
+  height: 21px;
+}
+.main .content1 .mui-table-view-cell .right .baojia {
+  font-size: 12px;
+  color: #999;
+}
 
 .footer {
   margin-top: 36px;

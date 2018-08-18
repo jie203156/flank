@@ -185,6 +185,52 @@ html, body {
 
 
   }
+  .content1{
+    .mui-table-view-cell{
+      display: flex;
+      .left{
+        flex-basis: 100px;
+        img{
+          height: 100px;
+        }
+      }
+      .right{
+        padding-left: 2%;
+        flex: 1;
+        .chanpin{
+          height: 45px;
+        }
+        .jiaxing{
+          display: flex;
+          justify-content: space-between;
+          //margin-top: 40px;
+          .moni{
+            font-size: 20px;
+            color: orange;
+          }
+          .xing{
+            img{
+              height: 21px;
+            }
+          }
+        }
+        .baojia{
+          font-size: 12px;
+          color: #999;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 }
