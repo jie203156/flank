@@ -204,6 +204,48 @@ html, body {
   font-size: 12px;
   color: #999;
 }
+.main .userconmet .pinlun {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1.7%;
+}
+.main .userconmet .pinlun .top {
+  background-color: #f2f2f2;
+  display: flex;
+}
+.main .userconmet .pinlun .top img {
+  flex-basis: 80px;
+  height: 80px;
+}
+.main .userconmet .pinlun .top p {
+  flex: 1;
+  font-size: 13px;
+  color: #8f8f94;
+  padding-left: 1%;
+}
+.main .userconmet .pinlun .bot {
+  margin-top: 10px;
+  border: 1px solid #e0e0e0;
+}
+.main .userconmet .pinlun .bot .xing {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.main .userconmet .pinlun .bot .xing .yonghu span {
+  font-size: 14px;
+  color: #93a365;
+}
+.main .userconmet .pinlun .bot .xing .yonghu img {
+  height: 17px;
+}
+.main .userconmet .pinlun .bot .xing .riqi {
+  padding: 5px;
+  font-size: 14px;
+  color: #bbb;
+}
+.main .userconmet .pinlun .bot .punlunyu {
+  margin-top: 2%;
+}
 
 .footer {
   margin-top: 36px;
