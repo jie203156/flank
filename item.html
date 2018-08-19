@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- 导入jQuery模板 -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 导入mui插件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <!-- 导入字体图标 -->
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- 导入bootstrap插件 -->
+    <!-- <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 导入css模板 -->
+    <link rel="stylesheet" href="./css/item.css">
+    <script src="./js/item.js"></script>
+    <link rel="icon" href="./images/star.png">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- 头部制作 -->
+        <div class="header">
+            <span class="back">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </span>
+            <span class="title">凑单品</span>
+        </div>
+        <!-- 中间内容制作 -->
+        <div class="main">
+            <div class="nav">
+                <div class="left">
+                    <div class="shop">
+                        <div class="text">京东</div>
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="place">
+                        <div class="text">华北</div>
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="price">
+                        <div class="text">全部价格</div>
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="right">
+                    <i class="fa fa-th-list" aria-hidden="true"></i>
+                </div>
+            </div>
+            <ul class="list">
+                <!-- list列表 -->
+                <li>
+                    <div class="text">哈哈</div>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                </li>
+            </ul>
+            <div class="filter">
+                <div class="searchbar">
+                    <div class="left">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input type="text" placeholder="搜索您想要的凑单品">
+                    </div>
+                    <a href="#" class="right">搜索</a>
+                </div>
+                <div class="sort">
+                    <div class="text">排序</div>
+                    <div class="sortlist">
+                        <button type="button" class="mui-btn active">销量</button>
+                        <button type="button" class="mui-btn">价格↑</button>
+                        <button type="button" class="mui-btn">价格↓</button>
+                        <button type="button" class="mui-btn" style="opacity: 0;">隐藏</button>
+                    </div>
+                </div>
+                <div class="classify">
+                    <div class="text">分类</div>
+                    <div class="classifylist">
+                        <button type="button" class="mui-btn active">全部</button>
+                        <button type="button" class="mui-btn">家居</button>
+                        <button type="button" class="mui-btn">数码</button>
+                        <button type="button" class="mui-btn">办公</button>
+                        <button type="button" class="mui-btn">个户</button>
+                        <button type="button" class="mui-btn">食品</button>
+                        <button type="button" class="mui-btn">母婴</button>
+                        <button type="button" class="mui-btn">服饰</button>
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <!-- 产品页面 -->
+            </div>
+        </div>
+
+        <!-- 尾部制作 -->
+        <div class="footer">
+            <div class="btnS">
+                <button>登录</button>
+                <button>注册</button>
+                <button>
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
+            </div>
+            <div class="footerTxt">
+                <p>
+                    <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a> &nbsp慢慢买手机版 -- 掌上比价平台</p>
+                <p>
+                    <a href="./index.html" class="web">m.manmanbuy.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+<script>
+    // rem模板
+    document.querySelector('html').style.fontSize = screen.width / 10 + 'px';
+</script>
+
+
+<!-- 店铺名模板 -->
+<script id="shoplist" type="text/html">
+    {{ each result v i }}
+    <li data-shopid={{ v.shopId }}>
+        <div class="text">{{ v.shopName }}</div>
+        {{ if i == 0 }} 
+        <i class="fa fa-check" aria-hidden="true"></i>
+        {{ else }}
+        <i class="fa" aria-hidden="true"></i>
+        {{ /if }}
+    </li>
+    {{ /each }}
+</script>
+
+
+<!-- 地区模版 -->
+<script id="placelist" type="text/html">
+    {{ each result v i }}
+    <li data-areaid={{ v.areaId }}>
+        <div class="text">{{ v.areaName }}</div>
+        {{ if i == 0 }} 
+        <i class="fa fa-check" aria-hidden="true"></i>
+        {{ else }}
+        <i class="fa" aria-hidden="true"></i>
+        {{ /if }}
+    </li>
+    {{ /each }}
+</script>
+
+<!-- 价格固定 -->
+<script id="pricelist" type="text/html">
+    <li data-priceid=1>
+        <div class="text">全部价格</div>
+        <i class="fa fa-check" aria-hidden="true"></i>
+    </li>
+    <li data-priceid=1>
+        <div class="text">1-3元</div>
+        <i class="fa" aria-hidden="true"></i>
+    </li>
+    <li data-priceid=1>
+        <div class="text">3-5元</div>
+        <i class="fa" aria-hidden="true"></i>
+    </li>
+    <li data-priceid=1>
+        <div class="text">5-10元</div>
+        <i class="fa" aria-hidden="true"></i>
+    </li>
+    <li data-priceid=1>
+        <div class="text">10-15元</div>
+        <i class="fa" aria-hidden="true"></i>
+    </li>
+    <li data-priceid=1>
+        <div class="text">15元以上</div>
+        <i class="fa" aria-hidden="true"></i>
+    </li>
+</script>
+
+<script id="productlist" type="text/html">
+    {{ each result v i }}
+    <div class="product">
+        <a href="#" data-productid={{ v.productId }}>
+            <img src="{{ v.productImg }}" alt="">
+            <p class="introduce mui-ellipsis-2">{{ v.productName }}</p>
+            <p class="pricelist">
+                <span class="money">￥</span>
+                <span class="price">{{ v.productPrice.substr(1) }}</span>
+            </p>
+        </a>
+    </div>
+    {{ /each }}
+</script>

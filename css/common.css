@@ -1,163 +1,57 @@
-body,
-div,
-span,
-p,
-a,
-img,
-input,
-ol,
-ul,
-li,
-h1,
-h2,
-h3,
-h4,
-strong,
-em,
-i,
-del {
-  margin: 0;
-  padding: 0;
-}
+/*
+Error: Invalid CSS after "...color:  #f2f2f2": expected "{", was ";"
+        on line 127 of sass/common.scss
 
-a {
-  text-decoration: none;
-  color: #000;
-}
+122:             }
+123:         }
+124:     }
+125:     .main {
+126: <<<<<<< HEAD
+127:         background-color:  #f2f2f2;
+128: =======
+129:         height: pr(5000);
+130:         background-color: #f2f2f2;
+131: >>>>>>> 020d4f8d457375459d34faff613986d2e1b257aa
+132:     }
 
-input {
-  border: 0 none;
-  outline: 0 none;
-}
-
-img {
-  border: 0 none;
-  vertical-align: middle;
-}
-
-li {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-strong {
-  font-weight: normal;
-}
-
-em,
-i {
-  font-style: normal;
-}
-
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
-  height: 0;
-  visibility: hidden;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-
-.container {
-  height: 100%;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-}
-.container .header .topNav {
-  height: 1.2396694215rem;
-  background-color: #ff841d;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 0.4132231405rem;
-}
-.container .header .topNav a {
-  height: 0.5785123967rem;
-}
-.container .header .topNav a img {
-  height: 100%;
-}
-.container .header .topNav a.loading {
-  height: 0.867768595rem;
-}
-.container .header .search {
-  height: 1.2396694215rem;
-  border-bottom: 1px solid #ebebeb;
-  display: flex;
-  padding: 0.2314049587rem 0.2231404959rem;
-  position: relative;
-  background-color: #fff;
-}
-.container .header .search input {
-  height: 0.7438016529rem;
-  border-radius: 0.3719008264rem;
-  border: none;
-  background-color: #f1f1f1;
-}
-.container .header .search input::placeholder {
-  font-size: 0.4049586777rem;
-}
-.container .header .search .searchBtn {
-  position: absolute;
-  width: 1.5702479339rem;
-  height: 0.7438016529rem;
-  border-radius: 0.3719008264rem;
-  right: 0.2231404959rem;
-  font-size: 0.4049586777rem;
-  line-height: 0.1239669421rem;
-  text-align: center;
-  background-color: #ff841d;
-  border: none;
-}
-.container .main {
-  background-color: #f2f2f2;
-}
-.container .footer {
-  height: 2.3636363636rem;
-  display: flex;
-  flex-direction: column;
-  background-color: #efefef;
-}
-.container .footer .btnS {
-  height: 0.826446281rem;
-  display: flex;
-}
-.container .footer .btnS button {
-  flex: 1;
-  border: 0;
-  background-color: #efefef;
-  border-radius: 0;
-  border-top: 0.0082644628rem solid #c4c4c4;
-  border-bottom: 0.0082644628rem solid #c4c4c4;
-  font-size: 0.347107438rem;
-  color: #5a5a5a;
-}
-.container .footer .btnS button:nth-child(n+2) {
-  border-left: 0.0082644628rem solid #c4c4c4;
-}
-.container .footer .footerTxt {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.container .footer .footerTxt p {
-  font-size: 0.3305785124rem;
-  color: #666666;
-}
-.container .footer .footerTxt p a {
-  color: red;
-}
-.container .footer .footerTxt p .web {
-  color: #666666;
-}
-
-/*# sourceMappingURL=common.css.map */
+Backtrace:
+sass/common.scss:127
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:677:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:678:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:678:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...color:  #f2f2f2\": expected \"{\", was \";\"\A         on line 127 of sass/common.scss\A \A 122:             }\A 123:         }\A 124:     }\A 125:     .main {\A 126: <<<<<<< HEAD\A 127:         background-color:  #f2f2f2;\A 128: =======\A 129:         height: pr(5000);\A 130:         background-color: #f2f2f2;\A 131: >>>>>>> 020d4f8d457375459d34faff613986d2e1b257aa\A 132:     }"; }
