@@ -161,87 +161,61 @@ i {
   color: #666666;
 }
 
-html,
-body {
-  width: 100%;
-  box-sizing: border-box;
+.container .header .topNav {
+  background-color: #f4483e;
 }
-
-.main {
-  background-color: #f2f2f2;
-}
-.main .getindexmenu {
-  background-color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-}
-.main .getindexmenu div {
-  width: 25%;
-  height: 2.479338843rem;
-  display: flex;
-  justify-content: center;
-}
-.main .getindexmenu div a {
-  width: 1.652892562rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.3140495868rem;
-  color: #000;
-}
-.main .getindexmenu div a img {
-  width: 100%;
-}
-.main .Sale {
-  margin-top: 0.0991735537rem;
-}
-.main .Sale .title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 0.8760330579rem;
-  background-color: #ff9a19;
-  padding: 0 0.2479338843rem;
-  border-bottom: 0.041322314rem solid #ffc881;
-}
-.main .Sale .title p {
-  flex: 1;
+.container .header .topNav .mui-icon-back {
   color: #fff;
-  font-size: 0.3719008264rem;
+  font-size: 0.4958677686rem;
 }
-.main .Sale .title img {
-  width: 0.5123966942rem;
+.container .header .topNav .title {
+  color: #fff;
+  font-size: 0.5rem;
 }
-.main .products {
+.container .main {
+  background-color: #fff;
+  height: auto;
+  flex: 1;
+  position: relative;
+}
+.container .main .coupon {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+.container .main .coupon div {
+  width: 31%;
+  border: 1px solid #ccc;
+  margin: 4px;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
 }
-.main .products ul .product a {
-  display: flex;
+.container .main .coupon div img {
+  width: 50%;
 }
-.main .products ul .product a .price img {
-  width: 2.5867768595rem;
-  height: 3.1652892562rem;
+.container .main .coupon div p {
+  margin: 0;
 }
-.main .products ul .product a .info {
-  flex: 1;
-  padding: 0.4380165289rem;
+.container .main .coupon div.hidden {
+  border: 0;
 }
-.main .products ul .product a .info .title {
-  font-size: 0.3719008264rem;
+.container .nav {
+  height: 0.826446281rem;
+  line-height: 0.826446281rem;
+  background: linear-gradient(to bottom, #fafafa, #eee);
+  margin: 0.6611570248rem 0;
+  font-size: 0.4rem;
+  color: #ccc;
+  padding-left: 0.1652892562rem;
+  border-bottom: 1px solid #ccc;
 }
-.main .products ul .product a .info .title span {
-  color: #ff6c00;
-}
-.main .products ul .product a .info .other {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0.8925619835rem;
-  font-size: 0.2975206612rem;
-  color: #a1a1a1;
+.container .nav a {
+  color: #444;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=discounts.css.map */

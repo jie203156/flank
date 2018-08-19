@@ -161,87 +161,67 @@ i {
   color: #666666;
 }
 
-html,
-body {
-  width: 100%;
-  box-sizing: border-box;
+.container .header .topNav {
+  background-color: #f4483e;
 }
-
-.main {
-  background-color: #f2f2f2;
-}
-.main .getindexmenu {
-  background-color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-}
-.main .getindexmenu div {
-  width: 25%;
-  height: 2.479338843rem;
-  display: flex;
-  justify-content: center;
-}
-.main .getindexmenu div a {
-  width: 1.652892562rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.3140495868rem;
-  color: #000;
-}
-.main .getindexmenu div a img {
-  width: 100%;
-}
-.main .Sale {
-  margin-top: 0.0991735537rem;
-}
-.main .Sale .title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 0.8760330579rem;
-  background-color: #ff9a19;
-  padding: 0 0.2479338843rem;
-  border-bottom: 0.041322314rem solid #ffc881;
-}
-.main .Sale .title p {
-  flex: 1;
+.container .header .topNav .mui-icon-back {
   color: #fff;
-  font-size: 0.3719008264rem;
+  font-size: 0.4958677686rem;
 }
-.main .Sale .title img {
-  width: 0.5123966942rem;
+.container .header .topNav .title {
+  color: #fff;
+  font-size: 0.5rem;
 }
-.main .products {
+.container .main {
+  background-color: #fff;
+  height: auto;
+  flex: 1;
+  position: relative;
+}
+.container .main .hint {
+  text-align: center;
+  padding-top: 3px;
+}
+.container .main .product {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-top: 5px;
+}
+.container .main .product .info {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  padding: 5px;
 }
-.main .products ul .product a {
+.container .main .product .info .detail {
   display: flex;
 }
-.main .products ul .product a .price img {
-  width: 2.5867768595rem;
-  height: 3.1652892562rem;
+.container .main .product .info .detail img {
+  width: 30%;
+  height: 30%;
+  margin-right: 5px;
 }
-.main .products ul .product a .info {
+.container .main .product .info .detail .text {
   flex: 1;
-  padding: 0.4380165289rem;
 }
-.main .products ul .product a .info .title {
-  font-size: 0.3719008264rem;
+.container .main .product .info .detail .text p {
+  color: #333;
+  font-size: 16px;
 }
-.main .products ul .product a .info .title span {
-  color: #ff6c00;
+.container .main .product .info .detail .text .price {
+  font-weight: 600;
 }
-.main .products ul .product a .info .other {
+.container .main .product .info .time {
+  text-align: center;
+  color: orange;
+  margin: 5px 0px;
+}
+.container .main .product a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 20px;
   display: flex;
-  justify-content: space-between;
-  margin-top: 0.8925619835rem;
-  font-size: 0.2975206612rem;
-  color: #a1a1a1;
+  align-items: center;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=couponproduct.css.map */
