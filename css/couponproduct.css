@@ -1,7 +1,7 @@
 /*
 Error: Invalid CSS after "...color:  #f2f2f2": expected "{", was ";"
         on line 127 of sass/common.scss
-        from line 1 of sass/index.scss
+        from line 1 of sass/couponproduct.scss
 
 122:             }
 123:         }
@@ -17,7 +17,7 @@ Error: Invalid CSS after "...color:  #f2f2f2": expected "{", was ";"
 
 Backtrace:
 sass/common.scss:127
-sass/index.scss:1
+sass/couponproduct.scss:1
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1203:in `tok!'
@@ -81,4 +81,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...color:  #f2f2f2\": expected \"{\", was \";\"\A         on line 127 of sass/common.scss\A         from line 1 of sass/index.scss\A \A 122:             }\A 123:         }\A 124:     }\A 125:     .main {\A 126: <<<<<<< HEAD\A 127:         background-color:  #f2f2f2;\A 128: =======\A 129:         height: pr(5000);\A 130:         background-color: #f2f2f2;\A 131: >>>>>>> 020d4f8d457375459d34faff613986d2e1b257aa\A 132:     }"; }
+  content: "Error: Invalid CSS after \"...color:  #f2f2f2\": expected \"{\", was \";\"\A         on line 127 of sass/common.scss\A         from line 1 of sass/couponproduct.scss\A \A 122:             }\A 123:         }\A 124:     }\A 125:     .main {\A 126: <<<<<<< HEAD\A 127:         background-color:  #f2f2f2;\A 128: =======\A 129:         height: pr(5000);\A 130:         background-color: #f2f2f2;\A 131: >>>>>>> 020d4f8d457375459d34faff613986d2e1b257aa\A 132:     }"; }

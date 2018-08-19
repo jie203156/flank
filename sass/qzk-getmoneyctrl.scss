@@ -1,0 +1,188 @@
+@import "common.scss";
+@function pr($p) {
+    @return $p/121+rem;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    background-color: #ffffff;
+    // display: flex;
+    // flex-direction: column;
+    // padding: 0;
+    // 头部
+    .header {
+        .topNav {
+            z-index: 999;
+            position: fixed;
+            width: 100%;
+            height: pr(150);
+            background-color: #ff841d;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 pr(50);
+            span {
+                height: pr(70);
+                font-size: pr(60);
+                color: #fff;
+                text-align: center;
+                line-height: pr(70);
+            }
+            a {
+                height: pr(70);
+                .mui-icon-back {
+                    height: pr(52);
+                    color: #fff;
+                    padding-top: pr(5);
+                }
+                img {
+                    height: 100%;
+                }
+                &.loading {
+                    height: pr(105);
+                }
+            }
+        }
+    }
+    // 中间内容
+    .main {
+        // height: pr(2000);
+        // background-color: red;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        //商品列表
+        .content {
+            margin-top: pr(145);
+            position: relative;
+            margin-left: pr(0);
+            // flex: 1;
+            background-color: #fff;
+            .mui-table-cell {
+                // height: pr(385);
+                display: flex;
+                justify-content: center;
+                .left {
+                    flex-basis: pr(350);
+                    img {
+                        width: 100%;
+                    }
+                }
+                .right {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding-left: pr(50);
+                    .pron {
+                        margin-bottom: pr(110);
+                        .proname {
+                            font-size: pr(43);
+                            color: #000;
+                            line-height: pr(43);
+                        }
+                        .pronpice {
+                            font-size: pr(43);
+                            color: red;
+                            line-height: pr(43);
+                        }
+                    }
+                    .info {
+                        .price {
+                            font-size: pr(37);
+                            color: #666;
+                        }
+                        .pull-right {
+                            font-size: pr(34);
+                            color: #666;
+                            .mui-icon-chat {
+                                font-size: pr(34);
+                                margin-right: pr(15);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 上下页
+        .page {
+            height: pr(160);
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: pr(35);
+            .mui-numbox {
+                height: pr(80);
+                width: pr(340);
+                .mui-btn {
+                    width: pr(120);
+                    font-size: pr(31);
+                    outline: none;
+                    border: none;
+                }
+                .mui-numbox-input {
+                    width: pr(100);
+                    font-size: pr(38);
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+        // 导航
+        .nav {
+            height: pr(80);
+            margin-bottom: pr(50);
+            background-color: #fafafa;
+            border-bottom: pr(1) solid #cfcfcf;
+            font-size: pr(38);
+            line-height: pr(80);
+        }
+    }
+    // 底部
+    .footer {
+        height: pr(286);
+        display: flex;
+        flex-direction: column;
+        background-color: #efefef;
+        .btnS {
+            height: pr(100);
+            display: flex;
+            button {
+                flex: 1;
+                border: 0;
+                background-color: #efefef;
+                border-radius: 0;
+                border-top: pr(1) solid #c4c4c4;
+                border-bottom: pr(1) solid #c4c4c4;
+                font-size: pr(42);
+                color: #5a5a5a;
+                &:nth-child(n+2) {
+                    border-left: pr(1) solid #c4c4c4;
+                }
+            }
+        }
+        .footerTxt {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p {
+                font-size: pr(40);
+                color: #666666;
+                a {
+                    color: red;
+                }
+                .web {
+                    color: #666666;
+                }
+            }
+        }
+    }
+}

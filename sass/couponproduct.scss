@@ -1,0 +1,75 @@
+@import "common.scss";
+
+@function pr($p) {
+    @return $p/121+rem;
+}
+
+.container{
+    .header{
+        .topNav{
+            background-color: #f4483e;
+            .mui-icon-back{
+                color: #fff;
+                font-size: pr(60);
+            }
+            .title{
+                color: #fff;
+                font-size: 0.5rem;
+            }
+        }
+    }
+    .main{
+        background-color: #fff;
+        height: auto;
+        flex: 1;
+        position: relative;
+        .hint{
+            text-align: center;
+            padding-top: 3px;
+        }
+        .product{
+            display: flex;
+            border-bottom: 1px solid #ccc;
+            padding-top: 5px;
+            .info{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                .detail{
+                    display: flex;
+                    img{
+                        width: 30%;
+                        height: 30%;
+                        margin-right: 5px;
+                    }
+                    .text{
+                        flex: 1;
+                        p{
+                            color: #333;
+                            font-size: 16px;
+                        }
+                        .price{
+                            font-weight: 600;
+                        }
+                        
+                        
+                    }
+                }
+                .time{
+                    text-align: center;
+                    color: orange;
+                    margin: 5px 0px,
+                }
+            }
+            a{
+                text-decoration: none;
+                color: #ccc;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+

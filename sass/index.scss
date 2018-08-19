@@ -1,151 +1,147 @@
 @import "common.scss";
-
-
-
-html,body {
-    width: 100%;;
-    height: 100%;
+html,
+body {
+    width: 100%;
+    //height: 100%;
     box-sizing: border-box;
 }
 
-.container {
-    height: 100%;
-    background-color: #ffffff;
-    // display: flex;
-    // flex-direction: column;
-    // padding: 0;
-
-    .header {
-        .topNav {
-            height: pr(150);
-            background-color: #ff841d;
+//内容
+.main {
+    //height: pr(2000);
+    background-color: #f2f2f2;
+    //导航栏
+    .getindexmenu {
+        //height: pr(900);
+        background-color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        div {
+            width: 25%;
+            height: pr(250);
+            display: flex;
+            justify-content: center;
+            a {
+                width: pr(150);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: pr(33);
+                color: #333;
+                img {
+                    margin-bottom: pr(20);
+                    width: 100%;
+                }
+            }
+            &:nth-child(n+9) {
+                display: none;
+                a {
+                    margin-left: pr(75);
+                }
+            }
+        }
+    }
+    //超值折扣
+    .Sale {
+        margin-top: pr(12);
+        .title {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 pr(50);
-            a{
-                height: pr(70);
-                img {
-                    height: 100%;
-                }
-                &.loading {
-                    height: pr(105);
-                }
+            height: pr(106);
+            background-color: #ff9a19;
+            padding: 0 pr(30);
+            border-bottom: pr(5) solid #ffc881;
+            p {
+                flex: 1;
+                color: #fff;
+                font-size: pr(45);
             }
-        }
-
-        .search {
-            height: pr(150);
-            border-bottom: 1px solid #ebebeb;
-            display: flex;
-            padding:  pr(28) pr(27);
-            position: relative;
-
-            input {
-                height: pr(90);
-                border-radius: pr(45);
-                border: none;
-                background-color: #f1f1f1;
-                &::placeholder {
-                    font-size: pr(49);
-                }
-            }
-            .searchBtn {
-                position: absolute;
-                width: pr(190);
-                height: pr(90);
-                border-radius: pr(45);
-                right: pr(27);
-                font-size: pr(49);
-                line-height: pr(15);
-                text-align: center;
-                background-color: #ff841d;
-                border: none;
-
+            img {
+                width: pr(62);
             }
         }
     }
-
-    .main {
-        height: pr(2000);
-        background-color:  #f2f2f2;
-        .getindexmenu {
-            height: pr(900);
-            background-color: #ffffff;
-            display: flex;
-            flex-wrap: wrap;
-
-            div {
-                width: 25%;
-                height: pr(300);
-                display: flex;
-                justify-content: center;
-                a{
-                    width: pr(200);
-                    height: 100%;
+    //商品列表
+    .products {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        ul {
+            .product {
+                a {
                     display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: pr(38);
-
-                    img {
-                        width: 100%;
+                    //text-decoration: none;
+                    color: #333;
+                    .price {
+                        img {
+                            padding: pr(20) 0;
+                            margin-left: pr(30);
+                            width: pr(313);
+                            height: pr(383);
+                        }
+                    }
+                    .info {
+                        flex: 1;
+                        padding: pr(53);
+                        .title {
+                            font-size: pr(45);
+                            height: pr(130);
+                            line-height: pr(70);
+                            span {
+                                color: #ff6c00;
+                            }
+                        }
+                        .other {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: pr(108);
+                            font-size: pr(36);
+                            color: #a1a1a1;
+                        }
                     }
                 }
             }
-
-
         }
-        
     }
-
-    .footer {
-        height: pr(286);
-        display: flex;
-        flex-direction: column;
-        background-color: #efefef;
-
-        .btnS {
-            height: pr(100);
-            display: flex;
-
-            button {
-                flex: 1;
-                border: 0;
-                background-color: #efefef;
-                border-radius: 0;
-                border-top: pr(1) solid #c4c4c4;
-                border-bottom: pr(1) solid #c4c4c4;
-                font-size:pr(42);
-                color: #5a5a5a;
-                &:nth-child(n+2){
-                    border-left: pr(1) solid #c4c4c4;
-                }
-            }
+    //更多优惠
+    .Discount {
+        height: pr(185);
+        width: 100%;
+        padding: pr(31);
+        a {
+            display: block;
+            border: pr(1) solid #ccc;
+            border-radius: pr(20);
+            background-color: #fff;
+            text-align: center;
+            line-height: pr(88);
+            height: pr(88);
+            font-size: pr(40);
+            color: #5a5a5a;
         }
-        .footerTxt {
-            flex: 1;
+    }
+    //品牌排行
+    .brand {
+        margin-bottom: pr(30);
+        .title {
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            height: pr(106);
+            background-color: #ff9a19;
+            padding: 0 pr(30);
+            border-bottom: pr(5) solid #ffc881;
             p {
-                font-size: pr(40);
-                color: #666666;
-                a {
-                    color: red;
-                }
-
-                .web{
-                    color: #666666;
-                }
+                flex: 1;
+                color: #fff;
+                font-size: pr(45);
+            }
+            img {
+                width: pr(62);
             }
         }
     }
-
-
-
-
-
 }
