@@ -176,22 +176,29 @@ body {
 }
 .main .getindexmenu div {
   width: 25%;
-  height: 2.479338843rem;
+  height: 2.0661157025rem;
   display: flex;
   justify-content: center;
 }
 .main .getindexmenu div a {
-  width: 1.652892562rem;
+  width: 1.2396694215rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 0.3140495868rem;
-  color: #000;
+  font-size: 0.2727272727rem;
+  color: #333;
 }
 .main .getindexmenu div a img {
+  margin-bottom: 0.1652892562rem;
   width: 100%;
+}
+.main .getindexmenu div:nth-child(n+9) {
+  display: none;
+}
+.main .getindexmenu div:nth-child(n+9) a {
+  margin-left: 0.6198347107rem;
 }
 .main .Sale {
   margin-top: 0.0991735537rem;
@@ -220,8 +227,11 @@ body {
 }
 .main .products ul .product a {
   display: flex;
+  color: #333;
 }
 .main .products ul .product a .price img {
+  padding: 0.1652892562rem 0;
+  margin-left: 0.2479338843rem;
   width: 2.5867768595rem;
   height: 3.1652892562rem;
 }
@@ -231,6 +241,8 @@ body {
 }
 .main .products ul .product a .info .title {
   font-size: 0.3719008264rem;
+  height: 1.0743801653rem;
+  line-height: 0.5785123967rem;
 }
 .main .products ul .product a .info .title span {
   color: #ff6c00;
@@ -241,6 +253,42 @@ body {
   margin-top: 0.8925619835rem;
   font-size: 0.2975206612rem;
   color: #a1a1a1;
+}
+.main .Discount {
+  height: 1.5289256198rem;
+  width: 100%;
+  padding: 0.2561983471rem;
+}
+.main .Discount a {
+  display: block;
+  border: 0.0082644628rem solid #ccc;
+  border-radius: 0.1652892562rem;
+  background-color: #fff;
+  text-align: center;
+  line-height: 0.7272727273rem;
+  height: 0.7272727273rem;
+  font-size: 0.3305785124rem;
+  color: #5a5a5a;
+}
+.main .brand {
+  margin-bottom: 0.2479338843rem;
+}
+.main .brand .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 0.8760330579rem;
+  background-color: #ff9a19;
+  padding: 0 0.2479338843rem;
+  border-bottom: 0.041322314rem solid #ffc881;
+}
+.main .brand .title p {
+  flex: 1;
+  color: #fff;
+  font-size: 0.3719008264rem;
+}
+.main .brand .title img {
+  width: 0.5123966942rem;
 }
 
 /*# sourceMappingURL=index.css.map */
