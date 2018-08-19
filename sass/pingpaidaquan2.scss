@@ -221,6 +221,57 @@ html, body {
       }
     }
   }
+  .userconmet{
+    .pinlun{
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1.7%;
+      .top{
+        background-color: #f2f2f2;
+        display: flex;
+        img{
+          flex-basis: 80px;
+          height: 80px;
+        }
+        p{
+          flex: 1;
+          font-size: 13px;
+          color: #8f8f94;
+          padding-left: 1%;
+        }
+      }
+      .bot{
+        margin-top: 10px;
+        border: 1px solid #e0e0e0;
+        .xing{
+          display: flex;
+          justify-content: space-between;
+          padding: 5px;
+          .yonghu{
+            span{
+              font-size: 14px;
+              color: #93a365;
+            }
+            img{
+              height: 17px;
+            }
+          }
+          .riqi{
+            padding: 5px;
+            font-size: 14px;
+            color: #bbb;
+          }
+
+        }
+        .punlunyu{
+          margin-top: 2%;
+        }
+
+
+
+      }
+    }
+  }
+
 
 
 

@@ -5,14 +5,18 @@ $(function () {
        dataType:"json",
        success:function (res) {
            console.log(res);
+           var htmlstr=template('bran',res);
+           $('.brandname').html(htmlstr)
+
+
        }
-   })
+   });
 
     var backButton=$('.back_to_top');
     function backToTop() {
         $('html,body').animate({
             scrollTop: 0
-        }, 300);
+        }, 4000);
     }
     backButton.on('click', backToTop);
 
