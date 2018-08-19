@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- 导入jQuery模板 -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 导入mui插件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <!-- 导入字体图标 -->
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- 导入bootstrap插件 -->
+    <!-- <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 导入css模板 -->
+    <link rel="stylesheet" href="./css/qzk-getmoneyctrl.css">
+    <script src="./js/qzk-getmoneyctrl.js"></script>
+    <script src="js/common.js"></script>
+
+</head>
+
+<body>
+    <!-- 外面包一个大盒子 -->
+    <div class="container">
+
+        <!-- 1.头部制作 -->
+        <div class="header">
+            <div class="topNav">
+                <a href="#"><span class="mui-icon mui-icon-back"></span></a>
+                <span>省钱控-最新优惠</span>
+                <a href="#" class="loading"><img src="./images/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt=""></a>
+            </div>
+        </div>
+        <!-- 2.中间内容制作 -->
+        <div class="main">
+
+
+            <!--3. 商品列表 -->
+            <div class="content">
+                <ul class="mui-table-view cartlist">
+                    <!-- <li class="mui-table-view-cell">
+                        <div class="mui-table-cell">
+                            <div class="left">
+                                <a href="#"><img src="./images/ic_bcj.png" alt=""></a>
+                            </div>
+                            <div class="right">
+                                <a href="#">
+                                    <p class="pron">
+                                        <span class="proname">9点白菜更新：南极人男袜、衣物防尘袋、冈本避孕套等！超值白菜价榜单！</span>
+                                        <span class="pronpice">爱吃瓜的群众看过来哈！20180819</span>
+                                    </p>
+                                    <p class="info">
+                                        <span class="price">慢慢买 | 08-19 08:55</span>
+                                        <span class="num pull-right"><i class="mui-icon mui-icon-chat"></i>0</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div> 
+                    </li> -->
+                </ul>
+            </div>
+
+            <!-- 4.上下页 -->
+            <div class="page">
+                <div class="mui-numbox" data-numbox-step='1' data-numbox-min='1' data-numbox-max='144'>
+                    <button class="mui-btn mui-numbox-btn-minus setTop" type="button">上一页</button>
+                    <input class="mui-numbox-input" type="number" />
+                    <button class="mui-btn mui-numbox-btn-plus setTop" type="button">下一页</button>
+                </div>
+            </div>
+
+
+            <!-- 5.导航 -->
+            <div class="nav">
+                <a href="#">首页</a><span>&nbsp>&nbsp省钱控</span>
+            </div>
+        </div>
+
+        <!-- 6.尾部制作 -->
+        <div class="footer">
+            <div class="btnS">
+                <button>登录</button>
+                <button>注册</button>
+                <button class="setTop"><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
+            </div>
+            <div class="footerTxt">
+                <p><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a> &nbsp慢慢买手机版 -- 掌上比价平台</p>
+                <p><a href="./index.html" class="web">m.manmanbuy.com</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    // rem模板
+    document.querySelector('html').style.fontSize = screen.width / 10 + 'px';
+</script>
+
+<!--商品列表遍历模板 -->
+<script type="text/html" id="cartlist">
+    {{each result as value i}}
+
+    <li class="mui-table-view-cell">
+        <div class="mui-table-cell">
+            <div class="left">
+                <a href="#">{{#value.productImgSm}} </a>
+            </div>
+            <div class="right">
+                <a href="#">
+                    <p class="pron">
+                        <span class="proname">{{value.productName}}</span>
+                        <span class="pronpice">{{value.productPinkage}}</span>
+                    </p>
+                    <p class="info">
+                        <span class="price">{{value.productFrom}} | {{value.productTime}}</span>
+                        <span class="num pull-right"><i class="mui-icon mui-icon-chat"></i>{{value.productComCount}}</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+    </li>
+
+    {{/each}}
+
+</script>
