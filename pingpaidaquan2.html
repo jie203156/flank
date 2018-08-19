@@ -9,7 +9,7 @@
     <!-- 导入mui插件 -->
     <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
     <script src="./lib/mui/js/mui.min.js"></script>
-    <script src="js/pinpaidaquan1.js"></script>
+
     <!--模板-->
     <script src="./lib/artTemplate/template-web.js"></script>
 
@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/pingpaidaquan2.css">
     <link rel="icon" href="./images/icommm.png">
+    <!--jjjjjjjjjjjjjjssssssssssssssss-->
+    <script src="js/pinpaidaquan2.js"></script>
 
 </head>
 <body>
@@ -44,9 +46,8 @@
         <p>平板电视那个牌子好</p>
     </div>
     <div class="content">
-        <ul class="mui-table-view">
-            <li class="mui-table-view-cell ">
-
+        <ul class="mui-table-view zhanshi">
+            <li class="mui-table-view-cell">
                 <div class="pinban">
                     <i>1</i>
                     <span>海信平板电视</span>
@@ -86,7 +87,7 @@
                 </div>
                 <a class="mui-navigate-right"></a>
                 <div class="xiaol">
-                    <span>30天全网销量</span>&nbsp;:&nbsp;
+                    <span>30天全网销量</span>
                     <span>1226482件</span>
                 </div>
             </li>
@@ -99,7 +100,7 @@
         <p>平板电视产品销量排行</p>
     </div>
     <div class="content1">
-        <ul class="mui-table-view">
+        <ul class="mui-table-view content2">
             <li class="mui-table-view-cell">
                 <div class="left">
                     <img src="./images/2016040016521576785.jpg" alt="">
@@ -203,6 +204,60 @@
     </div>
 
 </div>
+<script type="text/html" id="mmp">
+    {{each result v i}}
+    <li class="mui-table-view-cell">
+        <div class="pinban">
+            <!--<i>{{1}}</i>-->
+            {{if i==0}}<i class="tubiao">{{i+1}}</i>{{/if}}
+            {{if i==1}}<i class="tubiao1">{{i+1}}</i>{{/if}}
+            {{if i==2}}<i class="tubiao2">{{i+1}}</i>{{/if}}
+            {{if i>2}}<i class="tubiao3">{{i+1}}</i>{{/if}}
+
+            <span>{{v.brandName}}</span>
+        </div>
+        <a class="mui-navigate-right"></a>
+        <div class="xiaol">
+            <span>{{v.brandInfo}}</span>
+
+        </div>
+    </li>
+    {{/each}}
+
+</script>
+<script type="text/html" id="paihang">
+    {{each result v i}}
+    <li class="mui-table-view-cell">
+        <div class="left">
+            <img src="{{#v.productImg}}">
+        </div>
+        <div class="right">
+            <div class="chanpin">
+                <p>{{v.productName}}</p>
+            </div>
+            <div class="jiaxing">
+                <div class="moni">
+                    <span>{{v.productPrice}}</span>
+                </div>
+                <div class="xing">
+                    <img src="./images/star.png" alt="">
+                    <img src="./images/star.png" alt="">
+                    <img src="./images/star.png" alt="">
+                    <img src="./images/star.png" alt="">
+                    <img src="./images/star.png" alt="">
+                </div>
+            </div>
+            <div class="baojia">
+                <span>{{v.productQuote}}</span>
+                <span>{{v.productCom}}</span>
+            </div>
+        </div>
+    </li>
+
+    {{/each}}
+
+
+</script>
 
 
 </body>
