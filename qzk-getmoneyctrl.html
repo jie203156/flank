@@ -19,8 +19,9 @@
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script> -->
     <script src="./lib/artTemplate/template-web.js"></script>
     <!-- 导入css模板 -->
-    <link rel="stylesheet" href="./sass/qzk-getmoneyctrl.css">
+    <link rel="stylesheet" href="./css/qzk-getmoneyctrl.css">
     <script src="./js/qzk-getmoneyctrl.js"></script>
+    <script src="js/common.js"></script>
 
 </head>
 
@@ -68,9 +69,9 @@
             <!-- 4.上下页 -->
             <div class="page">
                 <div class="mui-numbox" data-numbox-step='1' data-numbox-min='1' data-numbox-max='144'>
-                    <button class="mui-btn mui-numbox-btn-minus" type="button">上一页</button>
+                    <button class="mui-btn mui-numbox-btn-minus setTop" type="button">上一页</button>
                     <input class="mui-numbox-input" type="number" />
-                    <button class="mui-btn mui-numbox-btn-plus" type="button">下一页</button>
+                    <button class="mui-btn mui-numbox-btn-plus setTop" type="button">下一页</button>
                 </div>
             </div>
 
@@ -86,7 +87,7 @@
             <div class="btnS">
                 <button>登录</button>
                 <button>注册</button>
-                <button><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
+                <button class="setTop"><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
             </div>
             <div class="footerTxt">
                 <p><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a> &nbsp慢慢买手机版 -- 掌上比价平台</p>
