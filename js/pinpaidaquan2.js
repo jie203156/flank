@@ -30,6 +30,22 @@ $(function () {
         }
     })
 
+    $('.content2').on('click','.pinpaiming',function () {
+        var ids=$(this).data('id');
+        var id=Number(ids);
+        $.ajax({
+            url:"http://mmb.ittun.com/api/getproductcom",
+            type:"get",
+            data:{productid:id},
+            success:function (res) {
+                console.log(res);
+                var htmlstr=template("pingl",res)
+                $('.userconmet').html(htmlstr);
+            }
+        })
+
+    })
+
 
 
 
