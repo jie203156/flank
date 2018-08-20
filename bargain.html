@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <!-- <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-itunes-app" content="app-id=933106331" /> -->
+
+    <title>bargain</title>
+    <link rel="icon" href="images/ic_bcj.png" type="image/x-icon">
+    <!-- 导入jQuery模板 -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 导入mui插件 -->
+    <!-- <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <script src="./lib/mui/js/mui.min.js"></script> -->
+    <!-- 导入字体图标 -->
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- 导入bootstrap插件 -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 导入css模板 -->
+    <link rel="stylesheet" href="./css/bargain.css">
+    <script src="./js/bargain.js"></script>
+    <script src="./js/common.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- 头部制作 -->
+        <div class="header">
+            <div class="topNav">
+                <a href="./index.html">
+                    <img src="./images/TB2cMR0aQUmBKNjSZFOXXab2XXa_!!690311.png" alt="">
+                </a>
+                <a href="#" class="loading">
+                    <img src="./images/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt="">
+                </a>
+            </div>
+
+        </div>
+        <!-- 中间内容制作 -->
+        <div class="main">
+            <div class="nav">
+                <ul>
+                    <!--模板渲染  -->
+                </ul>
+
+            </div>
+            <!-- 加载图 -->
+            <div class="smak">
+                <img src="./images/timg (1).gif" alt="">
+            </div>
+
+            <div class="products">
+
+                <!-- 模板渲染 -->
+
+            </div>
+
+
+        </div>
+
+        <!-- 尾部制作 -->
+        <div class="footer">
+            <div class="btnS">
+                <button><a href="./login.html">登录</a></button>
+                <button><a href="./register.html">注册</a></button>
+                <button class="btn">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
+            </div>
+            <div class="footerTxt">
+                <p>
+                    <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a> &nbsp慢慢买手机版 -- 掌上比价平台</p>
+                <p>
+                    <a href="./index.html" class="web">m.manmanbuy.com</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- 灰点 -->
+        <div class="back">
+            <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
+        </div>
+
+    </div>
+
+    <!-- 导航条模板 -->
+    <script type="text/html" id="navlist">
+        {{each result v i}}
+        <li class="{{if i == 0}}active{{/if}}" data-id="{{v.titleId}}">
+            {{v.title}}
+        </li>
+        {{/each}}
+    </script>
+
+    <!-- 商品列表模板 -->
+    <script type="text/html" id="productslist">
+
+        {{each result v i}}
+        <div class="product">
+            <div class="left">
+                {{#v.productImg}}
+            </div>
+            <div class="right">
+                <p class="title">{{#v.productName}}</p>
+                <p class="prices">
+                    {{#v.productPrice}}
+                </p>
+                <div class="num">
+
+                    {{#v.productCouponRemain}}
+                </div>
+                <p class="ticket">
+                    <span class="words">{{#v.productCoupon}}</span>
+                    <button data-id="{{v.productId}}">下单链接</button>
+                </p>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,8 +10,8 @@
     <meta content="telephone=no" name="format-detection" />
     <meta name="apple-itunes-app" content="app-id=933106331" /> -->
 
-    <title>Document</title>
-
+    <title>优惠券</title>
+    <link rel="icon" href="images/ic_temai.png" type="image/x-icon">
     <!-- 导入jQuery模板 -->
     <script src="./lib/jquery/jquery.min.js"></script>
     <!-- 导入mui插件 -->
@@ -28,8 +29,9 @@
     <script src="./js/common.js"></script>
 
 </head>
+
 <body>
-    
+
     <div class="container">
 
         <!-- 头部制作 -->
@@ -42,12 +44,12 @@
         </div>
         <!-- 中间内容制作 -->
         <div class="main">
-                <!-- <div class="mui-scroll-wrapper">
-                        <div class="mui-scroll"> -->
-                            <!--这里放置真实显示的DOM内容-->
-                            <div class="coupon"></div>
-                        <!-- </div>
-                    </div> -->
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!--这里放置真实显示的DOM内容-->
+                    <div class="coupon"></div>
+                </div>
+            </div>
 
 
         </div>
@@ -59,9 +61,9 @@
         <!-- 尾部制作 -->
         <div class="footer">
             <div class="btnS">
-                <button >登录</button>
-                <button >注册</button>
-                <button ><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
+                <button>登录</button>
+                <button>注册</button>
+                <button><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
             </div>
             <div class="footerTxt">
                 <p><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a> &nbsp慢慢买手机版 -- 掌上比价平台</p>
@@ -71,6 +73,7 @@
     </div>
 
 </body>
+
 </html>
 <script type="text/html" id="coupon">
     {{each list v i}}
@@ -81,12 +84,10 @@
     {{/each}}
     <div class="hidden">
         <img src="" alt="">
-        <p ></p>
+        <p></p>
     </div>
     <div class="hidden">
         <img src="" alt="">
         <p></p>
     </div>
 </script>
-
-

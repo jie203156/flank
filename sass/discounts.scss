@@ -3,6 +3,10 @@
 @function pr($p) {
     @return $p/121+rem;
 }
+* { touch-action: none; }
+body,html{
+    height: 100%;
+}
 
 .container{
     .header{

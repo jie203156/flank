@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
+    <title>凑单品</title>
+    <link rel="icon" href="images/ic_coudanpin.png" type="image/x-icon">
     <!-- 导入jQuery模板 -->
     <script src="./lib/jquery/jquery.min.js"></script>
     <!-- 导入mui插件 -->
@@ -21,8 +21,6 @@
     <!-- 导入css模板 -->
     <link rel="stylesheet" href="./css/item.css">
     <script src="./js/item.js"></script>
-    <link rel="icon" href="./images/star.png">
-
 </head>
 
 <body>
@@ -103,8 +101,8 @@
         <!-- 尾部制作 -->
         <div class="footer">
             <div class="btnS">
-                <button>登录</button>
-                <button>注册</button>
+                <button><a href="./login.html">登录</a></button>
+                <button><a href="./register.html">注册</a></button>
                 <button>
                     <i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
             </div>
@@ -137,7 +135,13 @@
     {{ each result v i }}
     <li data-shopid={{ v.shopId }} data-id={{ i }}>
         <div class="text">{{ v.shopName }}</div>
+<<<<<<< HEAD
         <i class="fa fa-check" aria-hidden="true"></i>
+=======
+        {{ if i == 0 }}
+        <i class="fa fa-check" aria-hidden="true"></i> {{ else }}
+        <i class="fa" aria-hidden="true"></i> {{ /if }}
+>>>>>>> 86dcff577069fe61e04766819e2351f69c93e0dc
     </li>
     {{ /each }}
 </script>
@@ -148,7 +152,13 @@
     {{ each result v i }}
     <li data-areaid={{ v.areaId }} data-flag={{ i }}>
         <div class="text">{{ v.areaName }}</div>
+<<<<<<< HEAD
         <i class="fa fa-check" aria-hidden="true"></i>
+=======
+        {{ if i == 0 }}
+        <i class="fa fa-check" aria-hidden="true"></i> {{ else }}
+        <i class="fa" aria-hidden="true"></i> {{ /if }}
+>>>>>>> 86dcff577069fe61e04766819e2351f69c93e0dc
     </li>
     {{ /each }}
 </script>

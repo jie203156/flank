@@ -1,0 +1,36 @@
+@import "common.scss";
+html,
+body {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    .header {
+        .topNav {
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            padding-right: pr(100);
+            a {
+                color: #fff;
+                height: pr(100);
+                width: pr(50);
+                font-size: pr(100);
+            }
+        }
+    }
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #fff;
+        padding: pr(30);
+        .labelbar {
+            height: pr(100);
+            border: pr(1) solid #ccc;
+            padding: pr(20);
+            margin-right: pr(20);
+            margin-bottom: pr(20);
+        }
+    }
+}
