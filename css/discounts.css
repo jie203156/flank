@@ -160,6 +160,10 @@ i {
   color: #666666;
 }
 
+* {
+  touch-action: none;
+}
+
 body, html {
   height: 100%;
 }
