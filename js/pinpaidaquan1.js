@@ -41,20 +41,22 @@ $(function () {
 
 //    登录界面
     $('.login').click(function () {
-        window.location.href=""
+        window.location.href="login.html"
     })
 
 
 //    注册界面接口
 $('.register').click(function () {
-    window.location.href=""
+    window.location.href="register.html"
 })
 
 
 
 //    logo跳转主页的接口
     $('.header .img1').click(function () {
-        window.location.href="";
+        window.location.href="index.html";
     })
+
+
 
 });
