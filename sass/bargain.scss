@@ -2,9 +2,10 @@
 
 .container{
     padding: 0;
+    
 
     .main{
-            
+          
         .nav{
             background-color: #fff; 
             margin-bottom: pr(20);      
@@ -129,6 +130,18 @@
                         }
                     }
                 }
+            }
+        }
+
+        .smak{
+            width: 100%;
+            height: pr(2000);
+            background-color: #fff;
+            
+
+            img{
+                width: 100%;
+                
             }
         }
     }

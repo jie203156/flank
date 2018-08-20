@@ -1,0 +1,56 @@
+@import "./common.scss";
+
+.container {
+    padding: 0;
+    .main {
+        
+          form {
+              padding: pr(38) pr(30) pr(105);
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-size: pr(10);
+                color: red;
+                opacity: 0;
+            }
+
+              input {
+                  border-radius: 0;
+                //   margin: pr(30) pr(0);
+                  height: pr(108);
+              }
+
+              .gain {
+                display: flex;
+                align-items: center;
+
+                .randow{
+                    flex-basis: pr(195);
+                    img {
+                        widows: 100%;
+                    }
+                }
+
+                .text {
+                    flex-basis: pr(295);
+                    margin: pr(0) pr(10);
+                }
+
+                .btn-default {
+                    flex-basis: pr(500);
+                    margin: pr(30) pr(0);
+                    background:linear-gradient(to right,white,#ccc);
+                    border-radius: pr(20);
+                }
+              }
+
+            .email {
+                margin-top: pr(30);
+            }
+
+          }
+          
+      }
+}
+

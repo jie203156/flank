@@ -99,6 +99,7 @@ i {
   height: 0.7438016529rem;
   border-radius: 0.3719008264rem;
   border: none;
+  width: 100%;
   background-color: #f1f1f1;
 }
 .container .header .search input::placeholder {
@@ -255,6 +256,14 @@ i {
   border-radius: 0.0826446281rem;
   border: none;
   color: #fff;
+}
+.container .main .smak {
+  width: 100%;
+  height: 16.5289256198rem;
+  background-color: #fff;
+}
+.container .main .smak img {
+  width: 100%;
 }
 .container .back {
   position: fixed;

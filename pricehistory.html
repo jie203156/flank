@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    
+
+    <!-- 导入js和css -->
+    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/pricehistory.js"></script>
+    <link rel="stylesheet" href="./css/pricehistory.css">
+    <script src="./js/common.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="javascript:back();" class="glyphicon glyphicon-chevron-left"></a>
+        <span>历史价格查询</span>
+    </div>
+    <div class="main">
+        <div class="link">
+            <p class="commodity">商品链接</p>
+            <input type="text" value="请通过购物App中使用分享或浏览器打开商品页面获取商品链">
+        </div>
+        <div class="query">
+            <span class="searchhistory">查询历史价格</span>
+            <span class="reset">重置</span>
+        </div>
+
+        <div class="operate">
+            <p>两步操作即可识别商品真假促销</p>
+            <div class="bd">
+                <p>1.打开购物APP（如手机淘宝）复制商品链接</p>
+                <p>2.打开慢慢买APP，系统自动识别查历史价</p>
+            </div>
+        </div>
+        <!-- 隐藏的数据页面 -->
+        <div class="llhide" style="display:none">
+            <span class="abnormal">商品近期价格走势</span>
+            <img src="./images/hide.png" alt="">
+        <span>连接异常或未收录，可以在<a href="https://www.baidu.com/">慢慢卖APP</a>反馈给官方小编，收录后即可查询价格</span>
+        
+        </div>
+    </div>
+   
+    
+</body>
+</html>
