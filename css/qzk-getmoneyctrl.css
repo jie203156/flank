@@ -1,0 +1,166 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.header .topNav {
+  width: 100%;
+  height: 1.2396694215rem;
+  background-color: #ff841d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.4132231405rem;
+}
+.header .topNav span {
+  height: 0.5785123967rem;
+  font-size: 0.4958677686rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.5785123967rem;
+}
+.header .topNav a {
+  height: 0.5785123967rem;
+}
+.header .topNav a .mui-icon-back {
+  height: 0.4297520661rem;
+  color: #fff;
+  padding-top: 0.041322314rem;
+}
+.header .topNav a img {
+  height: 100%;
+}
+.header .topNav a.loading {
+  height: 0.867768595rem;
+}
+
+.main {
+  background-color: #f2f2f2;
+}
+.main .products {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.main .products ul {
+  padding-left: 0.0826446281rem;
+}
+.main .products ul .product {
+  list-style: none;
+}
+.main .products ul .product a {
+  display: flex;
+  color: #333;
+}
+.main .products ul .product a .price img {
+  padding: 0.1652892562rem 0;
+  margin-left: 0.0826446281rem;
+  width: 2.5867768595rem;
+  height: 3.1652892562rem;
+}
+.main .products ul .product a .info {
+  flex: 1;
+  padding: 0.4380165289rem;
+}
+.main .products ul .product a .info .title {
+  font-size: 0.3719008264rem;
+  height: 1.0743801653rem;
+  line-height: 0.5785123967rem;
+}
+.main .products ul .product a .info .title span {
+  color: #ff6c00;
+}
+.main .products ul .product a .info .other {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8925619835rem;
+  font-size: 0.2975206612rem;
+  color: #a1a1a1;
+}
+.main .page {
+  height: 1.3223140496rem;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 0.2892561983rem;
+}
+.main .page .mui-numbox {
+  height: 0.6611570248rem;
+  width: 2.8099173554rem;
+}
+.main .page .mui-numbox .mui-btn {
+  width: 0.9917355372rem;
+  font-size: 0.2561983471rem;
+  outline: none;
+  border: none;
+}
+.main .page .mui-numbox .mui-numbox-input {
+  width: 0.826446281rem;
+  font-size: 0.3140495868rem;
+  outline: none;
+  border: none;
+}
+.main .nav {
+  height: 0.6611570248rem;
+  margin-bottom: 0.4132231405rem;
+  background-color: #fafafa;
+  border-bottom: 0.0082644628rem solid #cfcfcf;
+  font-size: 0.3140495868rem;
+  line-height: 0.6611570248rem;
+}
+.main .nav a {
+  text-decoration: none;
+}
+
+.footer {
+  height: 2.3636363636rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #efefef;
+}
+.footer .btnS {
+  height: 0.826446281rem;
+  display: flex;
+}
+.footer .btnS button {
+  flex: 1;
+  border: 0;
+  background-color: #efefef;
+  border-radius: 0;
+  border-top: 0.0082644628rem solid #c4c4c4;
+  border-bottom: 0.0082644628rem solid #c4c4c4;
+  font-size: 0.347107438rem;
+  color: #5a5a5a;
+}
+.footer .btnS button:nth-child(n+2) {
+  border-left: 0.0082644628rem solid #c4c4c4;
+}
+.footer .footerTxt {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footerTxt p {
+  font-size: 0.3305785124rem;
+  color: #666666;
+}
+.footer .footerTxt p a {
+  color: red;
+}
+.footer .footerTxt p .web {
+  color: #666666;
+}
+
+/*# sourceMappingURL=qzk-getmoneyctrl.css.map */

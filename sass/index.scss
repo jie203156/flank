@@ -2,7 +2,7 @@
 html,
 body {
     width: 100%;
-    height: 100%;
+    //height: 100%;
     box-sizing: border-box;
 }
 
@@ -12,27 +12,34 @@ body {
     background-color: #f2f2f2;
     //导航栏
     .getindexmenu {
-        height: pr(900);
+        //height: pr(900);
         background-color: #ffffff;
         display: flex;
         flex-wrap: wrap;
         div {
             width: 25%;
-            height: pr(300);
+            height: pr(250);
             display: flex;
             justify-content: center;
             a {
-                width: pr(200);
+                width: 100%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                font-size: pr(38);
-                color: #000;
+                font-size: pr(33);
+                color: #333;
                 img {
-                    width: 100%;
+                    margin-bottom: pr(20);
+                    width: pr(152);
                 }
+            }
+            &:nth-child(n+9) {
+                display: none;
+                //a {
+                //    margin-left: pr(75);
+                //}
             }
         }
     }
@@ -66,16 +73,23 @@ body {
             .product {
                 a {
                     display: flex;
+                    //text-decoration: none;
+                    color: #333;
                     .price {
                         img {
+                            padding: pr(20) 0;
+                            margin-left: pr(30);
                             width: pr(313);
                             height: pr(383);
                         }
                     }
                     .info {
+                        flex: 1;
                         padding: pr(53);
                         .title {
                             font-size: pr(45);
+                            height: pr(130);
+                            line-height: pr(70);
                             span {
                                 color: #ff6c00;
                             }
@@ -86,9 +100,51 @@ body {
                             margin-top: pr(108);
                             font-size: pr(36);
                             color: #a1a1a1;
+                            .mui-icon-chat {
+                                font-size: pr(40);
+                                margin-right: pr(10);
+                            }
                         }
                     }
                 }
+            }
+        }
+    }
+    //更多优惠
+    .Discount {
+        height: pr(185);
+        width: 100%;
+        padding: pr(31);
+        a {
+            display: block;
+            border: pr(1) solid #ccc;
+            border-radius: pr(20);
+            background-color: #fff;
+            text-align: center;
+            line-height: pr(88);
+            height: pr(88);
+            font-size: pr(40);
+            color: #5a5a5a;
+        }
+    }
+    //品牌排行
+    .brand {
+        margin-bottom: pr(30);
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: pr(106);
+            background-color: #ff9a19;
+            padding: 0 pr(30);
+            border-bottom: pr(5) solid #ffc881;
+            p {
+                flex: 1;
+                color: #fff;
+                font-size: pr(45);
+            }
+            img {
+                width: pr(62);
             }
         }
     }

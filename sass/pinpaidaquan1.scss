@@ -1,0 +1,175 @@
+body,
+div,
+span,
+p,
+a,
+img,
+input,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+strong,
+em,
+i,
+del {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+    font-weight: normal;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    .top {
+        padding: 0px 1%;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        background-color: #ff841d;
+        align-items: center;
+        justify-content: space-between;
+        .img1 {
+            height: 25px;
+        }
+        .img2 {
+            height: 34px;
+        }
+    }
+    .bottom {
+        padding: 0 1%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        .btn {
+            height: 30px;
+            margin-left: 1%;
+            border-radius: 15px;
+            border: 0;
+            font-size: 16px;
+            color: white;
+            background-color: #ff841d;
+        }
+        .txt {
+            margin-bottom: 0;
+            background-color: #f5f5f5;
+            border-radius: 15px;
+            border: 0;
+            height: 30px;
+            padding-left: 5%;
+        }
+    }
+    .nav {
+        background-color: #f3f3f3;
+        height: 38px;
+        border: 1px solid #ccc;
+        .nav1 {
+            line-height: 38px;
+            padding-left: 1%;
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+    .nav3 {
+        height: 46px;
+        margin: 10px 5px;
+        padding-left: 1.5%;
+        line-height: 46px;
+        border: 1px solid #ccc;
+        p {
+            font-size: 16px;
+            color: #b06a04;
+        }
+    }
+}
+
+.footer {
+    margin-top: 36px;
+    .bottom {
+        height: 34px;
+        display: flex;
+        border: 1px solid #ccc;
+        //align-items: center;
+        a {
+            width: 100%;
+            height: 100%;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:nth-child(2) {
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                ;
+            }
+        }
+    }
+    .bottom1 {
+        margin: 23px 0;
+        text-align: center;
+        p {
+            margin-bottom: 0;
+            font-size: 12px;
+            span {
+                color: red;
+            }
+        }
+    }
+}

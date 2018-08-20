@@ -1,0 +1,159 @@
+@import "./common.scss";
+
+.container{
+    padding: 0;
+    
+
+    .main{
+          position: relative;
+        .nav{
+            background-color: #fff; 
+            margin-bottom: pr(20);      
+    
+            ul{
+                display: flex;
+                height: pr(100);
+                justify-content: space-around;
+    
+                li{
+                    height: 100%; 
+                    display: flex;
+                    align-items: center;
+                    box-sizing: border-box;
+                    font-size: pr(40);
+    
+                   &.active{
+                       border-bottom: 2px solid red;
+                       
+                       color: red;
+                            
+                       
+                   }
+                }
+            }
+        }
+    
+        .products{
+            .product{
+                padding: pr(15);
+                display: flex;
+                background-color: #fff;
+                margin-bottom: pr(20);
+    
+                .left{
+                    margin-right: pr(20);
+                    img{
+                        width: pr(380);
+                    }
+                }
+    
+                .right{  
+                    padding-left: pr(10);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    .title{
+                        font-size:pr(45);
+                        color: #000;
+                    }
+    
+                    .prices{
+                        font-size: pr(60);
+                        color: #f00;
+                        i{
+                            font-size: pr(50);
+                            margin-right: pr(10);
+                        }
+
+                        em{
+                            font-size: pr(40);
+                        }
+                       
+                        del{
+                            font-size: pr(40);
+                            color: #666;
+                            margin-left: pr(40);
+                        }
+                        
+                    }
+    
+                    .num{
+                       .bar{
+                           display: flex;
+                           align-items: center;
+
+                           span{
+                               display: block;
+                               width: pr(300);
+                               height: pr(40);
+                               color: #fff;
+                               border-radius: pr(30);
+                               border: 1px solid #f00;
+                               text-align: center;
+                               line-height: pr(40);
+                               margin-right: pr(30);
+                               background: linear-gradient(to right,red,white);
+                           }
+
+                           b{
+                               color: #f00;
+                           }
+                       }
+                       
+
+                        
+                    }
+
+                    .ticket{
+                       
+
+                        span{
+                            height: pr(80);
+                            border: 1px dashed #f00;
+                            padding: pr(15);
+                           
+                            margin-right: pr(150);
+                            
+                            a{
+                                color: #f00;
+                            }
+                             
+                        }
+
+                        button{
+                            height: pr(80);
+                            background-color: #f00;
+                            border-radius: pr(10);
+                            border: none;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .smak{
+            position: absolute;
+            width: 100%;
+            height: pr(2000);
+            background-color: #fff;
+            
+
+            img{
+                width: 100%;
+                
+            }
+        }
+    }
+
+    .back{
+        position: fixed;
+        right: pr(60);
+        bottom: pr(60);
+        .glyphicon{
+            font-size: pr(120);
+            color: #777;
+        }
+    }
+}

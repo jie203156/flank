@@ -1,0 +1,133 @@
+@import "./common.scss";
+html,
+body {
+    height: 100%;
+}
+.container {
+    padding: 0;
+    height: 100%;
+    position: relative;
+    .main {
+        height: pr(873);
+        padding: pr(38) pr(30);
+        position: relative;
+    
+        input {
+            border-radius: 0;
+            &:first-child {
+                margin-top: pr(8);
+            }
+        }
+        .password {
+            margin: pr(30) pr(0);
+        }
+    
+        button {
+            width: 100%;
+            font-size: pr(56);
+        }
+    
+        .auto {
+            display: flex;
+           color: black;
+           margin-top: pr(54);
+    
+           input {
+            margin-top: pr(12);
+           }
+        }
+    
+        .forget {
+            position: absolute;
+            bottom: pr(108);
+            color: #ccc;
+        }
+    
+    }
+
+    .footer {
+        // display: flex;
+        flex: 1;
+        position: relative;
+        .footerTxt {
+            display: flex;
+            position: absolute;
+            top:pr(100);
+            left: 50%;
+            margin-left: pr(-430);
+            // justify-content: center;
+            // text-align: center;
+        }
+    }
+}
+
+.app-bar {
+    display: flex;
+    height: pr(180);
+    padding-top: pr(30);
+    padding-right: pr(30);
+    background-color: #faf8f5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+
+    .left  {
+        display: flex;
+        width: pr(140);
+        justify-content: center;
+        padding-top: pr(20);
+
+        .glyphicon {
+            text-align: center;
+            line-height: pr(66);     
+            width: pr(66);
+            height: pr(66);
+            background-color: #c8c8da;
+            color: white;
+            border-radius: 50%;
+            font-size: pr(40);
+        }
+    }
+
+    .man {
+        display: flex;
+        flex-basis: pr(120);
+        height: pr(120);
+        background-color: #fd5c01;
+        align-items: center;
+        justify-content: center;
+        font-size: pr(80);
+        color: white;
+        font-weight: bold;
+        border-radius: pr(20);
+        margin-right: pr(30);
+    }
+
+    .icon {
+        font-size: pr(40);
+        color: #999;
+       .one {
+           font-size: pr(50);
+           color: #666;
+       } 
+    }
+
+    .right {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        
+        a {
+            display: flex;
+            flex-basis: pr(222);
+            height: pr(90);
+            background-color: #ff7700;
+            justify-content: center;
+            align-items: center;
+            border-radius: pr(10);
+            color: white;
+        }
+
+    }
+}

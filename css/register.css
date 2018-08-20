@@ -1,0 +1,205 @@
+body,
+div,
+span,
+p,
+a,
+img,
+input,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+strong,
+em,
+i,
+del {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+input {
+  border: 0 none;
+  outline: 0 none;
+}
+
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+  font-weight: normal;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.container {
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.container .header .topNav {
+  height: 1.2396694215rem;
+  background-color: #ff841d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.4132231405rem;
+}
+.container .header .topNav a {
+  height: 0.5785123967rem;
+}
+.container .header .topNav a img {
+  height: 100%;
+}
+.container .header .topNav a.loading {
+  height: 0.867768595rem;
+}
+.container .header .search {
+  height: 1.2396694215rem;
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+  padding: 0.2314049587rem 0.2231404959rem;
+  position: relative;
+  background-color: #fff;
+}
+.container .header .search input {
+  height: 0.7438016529rem;
+  border-radius: 0.3719008264rem;
+  border: none;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.container .header .search input::placeholder {
+  font-size: 0.4049586777rem;
+}
+.container .header .search .searchBtn {
+  position: absolute;
+  width: 1.5702479339rem;
+  height: 0.7438016529rem;
+  border-radius: 0.3719008264rem;
+  right: 0.2231404959rem;
+  font-size: 0.4049586777rem;
+  line-height: 0.1239669421rem;
+  text-align: center;
+  background-color: #ff841d;
+  border: none;
+}
+.container .main {
+  background-color: #f2f2f2;
+}
+.container .footer {
+  height: 2.3636363636rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #efefef;
+}
+.container .footer .btnS {
+  height: 0.826446281rem;
+  display: flex;
+}
+.container .footer .btnS button {
+  flex: 1;
+  border: 0;
+  background-color: #efefef;
+  border-radius: 0;
+  border-top: 0.0082644628rem solid #c4c4c4;
+  border-bottom: 0.0082644628rem solid #c4c4c4;
+  font-size: 0.347107438rem;
+  color: #5a5a5a;
+}
+.container .footer .btnS button:nth-child(n+2) {
+  border-left: 0.0082644628rem solid #c4c4c4;
+}
+.container .footer .footerTxt {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .footer .footerTxt p {
+  font-size: 0.3305785124rem;
+  color: #666666;
+}
+.container .footer .footerTxt p a {
+  color: red;
+}
+.container .footer .footerTxt p .web {
+  color: #666666;
+}
+
+.container {
+  padding: 0;
+}
+.container .main form {
+  padding: 0.3140495868rem 0.2479338843rem 0.867768595rem;
+  display: flex;
+  flex-direction: column;
+}
+.container .main form p {
+  font-size: 0.0826446281rem;
+  color: red;
+  opacity: 0;
+}
+.container .main form input {
+  border-radius: 0;
+  height: 0.8925619835rem;
+}
+.container .main form .gain {
+  display: flex;
+  align-items: center;
+}
+.container .main form .gain .randow {
+  flex-basis: 1.6115702479rem;
+}
+.container .main form .gain .randow img {
+  widows: 100%;
+}
+.container .main form .gain .text {
+  flex-basis: 2.4380165289rem;
+  margin: 0rem 0.0826446281rem;
+}
+.container .main form .gain .btn-default {
+  flex-basis: 4.132231405rem;
+  margin: 0.2479338843rem 0rem;
+  background: linear-gradient(to right, white, #ccc);
+  border-radius: 0.1652892562rem;
+}
+.container .main form .email {
+  margin-top: 0.2479338843rem;
+}
+
+/*# sourceMappingURL=register.css.map */

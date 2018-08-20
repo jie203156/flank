@@ -67,6 +67,8 @@ i {
 .container {
   height: 100%;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 .container .header .topNav {
   height: 1.2396694215rem;
@@ -91,11 +93,13 @@ i {
   display: flex;
   padding: 0.2314049587rem 0.2231404959rem;
   position: relative;
+  background-color: #fff;
 }
 .container .header .search input {
   height: 0.7438016529rem;
   border-radius: 0.3719008264rem;
   border: none;
+  width: 100%;
   background-color: #f1f1f1;
 }
 .container .header .search input::placeholder {

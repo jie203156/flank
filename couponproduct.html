@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <!-- <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-itunes-app" content="app-id=933106331" /> -->
+
+    <title>优惠券</title>
+    <link rel="icon" href="images/ic_temai.png" type="image/x-icon">
+    <!-- 导入jQuery模板 -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 导入mui插件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <!-- 导入字体图标 -->
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- 导入bootstrap插件 -->
+    <!-- <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 导入css模板 -->
+    <link rel="stylesheet" href="./css/couponproduct.css">
+    <script src="./js/couponproduct.js"></script>
+    <script src="./js/common.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- 头部制作 -->
+        <div class="header">
+            <div class="topNav">
+                <a href="./discounts.html"><span class="mui-icon mui-icon-back"></span></a>
+                <p class="title">优惠券</p>
+                <a href="#" class="loading"><img src="./images/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt=""></a>
+            </div>
+        </div>
+        <!-- 中间内容制作 -->
+        <div class="main">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!--这里放置真实显示的DOM内容-->
+                    <p class="hint">--点餐前出示手机中的优惠券，即可享受优惠--</p>
+                    <div class="products"></div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 尾部制作 -->
+        <div class="footer">
+            <div class="btnS">
+                <button><a href="./login.html">登录</a></button>
+                <button><a href="./register.html">注册</a></button>
+                <button><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
+            </div>
+            <div class="footerTxt">
+                <p><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a> &nbsp慢慢买手机版 -- 掌上比价平台</p>
+                <p><a href="./index.html" class="web">m.manmanbuy.com</a></p>
+            </div>
+        </div>
+
+        <div class="hidden">
+            <span class="front mui-icon mui-icon-back"></span>
+            <img src="./images/60x60.gif" alt="">
+            <span class="back mui-icon mui-icon-forward"></span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<script type="text/html" id="product">
+    {{each list v i}}
+    <div class="product">
+        <div class="info" data-id="couponProductId">
+            <div class="detail">
+                {{#v.couponProductImg}}
+                <div class="text">
+                    <p class="desc">{{v.couponProductName}}</p>
+                    <p class="price">{{v.couponProductPrice}}</p>
+                </div>
+
+            </div>
+            <p class="time">{{v.couponProductTime}}</p>
+        </div>
+        <a href="#"><span class="mui-icon mui-icon-forward"></span></a>
+    </div>
+    {{/each}}
+</script>
