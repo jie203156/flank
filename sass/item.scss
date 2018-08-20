@@ -1,93 +1,65 @@
 @import "./common.scss";
-
 .container {
-
     .header {
-
         height: pr(133);
         background-color: #ff8b00;
         text-align: center;
         padding: 0 pr(60);
         border-bottom: pr(1) solid #e4c9a7;
-
         .back {
-
             .fa-angle-left {
-
                 font-size: pr(100);
                 color: #fff;
                 line-height: pr(133);
                 float: left;
             }
         }
-
         .title {
-
             font-size: pr(60);
             color: #fff;
             line-height: pr(133);
         }
     }
-
     .main {
-
         background-color: #f7f7f7;
         position: relative;
-
         .nav {
-
             display: flex;
             height: pr(112);
             background-color: #fff;
             border-bottom: pr(1) solid #dadada;
-
             .left {
-
                 display: flex;
                 flex: 1;
                 border-right: pr(1) solid #dadada;
-
                 >div {
-
                     display: flex;
                     flex: 1;
                     align-items: center;
                     justify-content: center;
-
                     .text {
-
                         font-size: pr(46);
                         color: #5a5a5a;
                     }
-
                     .fa {
-
                         margin: 0 0 pr(12) pr(12);
                     }
                 }
             }
-
             .right {
-
                 flex-basis: pr(138);
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
             }
         }
-        
-
         .list {
-
             display: none;
             box-shadow: 0 0 pr(25) pr(6) #ccc;
             position: absolute;
             background-color: #fff;
             width: 100%;
-
             li {
-
                 padding: 0 pr(100);
                 display: flex;
                 height: pr(112);
@@ -95,51 +67,37 @@
                 align-items: center;
                 justify-content: space-between;
                 font-size: pr(46);
-                
                 i {
-
                     display: none;
                 }
             }
         }
-
         .filter {
-
             padding: pr(30);
             box-shadow: 0 0 pr(25) pr(6) #ccc;
             display: none;
             position: absolute;
             background-color: #fff;
             width: 100%;
-
             .searchbar {
-
                 display: flex;
                 align-items: center;
-
                 .left {
-
                     display: flex;
                     flex: 1;
                     position: relative;
-
                     input {
-                        
                         padding-left: pr(100);
                     }
-                    
                     .fa {
-
                         position: absolute;
                         top: pr(25);
                         left: pr(25);
                         font-size: pr(60);
                         color: #a9a9a9;
-
                     }
                 }
                 .right {
-
                     flex-basis: pr(115);
                     color: #000000;
                     font-size: pr(46);
@@ -147,68 +105,46 @@
                     padding-left: pr(23);
                 }
             }
-
             .sort {
-
                 margin-bottom: pr(20);
-
-                .text{
-
+                .text {
                     font-size: pr(44);
                     color: #000;
                     margin-bottom: pr(20);
                 }
-
                 .sortlist {
-
                     display: flex;
                     justify-content: space-between;
-
                     button {
-                        
                         width: 23%;
                         color: #5a5a5a;
-
                         &.active {
-
                             color: #fff;
                             background-color: #ff9501;
                         }
                     }
                 }
             }
-
-
             .classify {
-
-                .text{
-
+                .text {
                     font-size: pr(44);
                     color: #000;
                     margin-bottom: pr(20);
                 }
-
                 .classifylist {
-
                     display: flex;
                     justify-content: space-between;
                     flex-wrap: wrap;
-
                     button {
-                        
                         width: 23%;
                         color: #5a5a5a;
-                        
                         &:nth-child(1),
                         &:nth-child(2),
                         &:nth-child(3),
                         &:nth-child(4) {
-
                             margin-bottom: pr(30);
                         }
-
                         &.active {
-
                             color: #fff;
                             background-color: #ff9501;
                         }
@@ -216,21 +152,14 @@
                 }
             }
         }
-
-        
         .products {
-
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             border: pr(25) solid #f1f1f1;
-
             .product {
-
                 width: 50%;
-                
                 a {
-
                     display: flex;
                     width: 100%;
                     flex-direction: column;
@@ -238,33 +167,23 @@
                     height: 100%;
                     background-color: #fff;
                     padding: pr(25);
-
                     img {
-
                         width: 100%;
                     }
-
                     .introduce {
-    
                         font-size: pr(36);
                         color: #333333;
                         width: 100%;
                         padding-left: pr(30);
                     }
-    
                     .pricelist {
-    
                         width: 100%;
                         padding-left: pr(30);
-    
                         .money {
-    
                             font-size: pr(22);
                             color: #f8601d;
                         }
-    
                         .price {
-    
                             font-size: pr(42);
                             color: #f8601d;
                         }
@@ -273,5 +192,4 @@
             }
         }
     }
-
 }
