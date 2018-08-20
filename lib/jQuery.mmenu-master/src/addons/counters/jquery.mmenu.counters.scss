@@ -1,0 +1,74 @@
+/*	
+ * jQuery mmenu counters add-on
+ * mmenu.frebsite.nl
+ */
+
+@import "../../mixins";
+@import "../../variables";
+
+
+@if ( $mm_opt_counters )
+{
+	.mm-counter
+	{
+		font-style: normal;
+		line-height: $mm_btnSize / 2;
+		display: block;
+		margin-top: -( $mm_btnSize / 4 );
+		position: absolute;
+		right: $mm_subopenWidth - 5px;
+		top: 50%;
+
+		@if ( $mm_opt_buttons )
+		{
+			+ .mm-btn_next:not( .mm-btn_fullwidth )
+			{
+				width: $mm_counterWidth + $mm_subopenWidth;
+
+				+ a,
+				+ span
+				{
+					margin-right: $mm_counterWidth + $mm_subopenWidth;
+				}
+			}
+			+ .mm-btn_fullwidth
+			{
+				+ a,
+				+ span
+				{
+					padding-right: $mm_counterWidth + $mm_subopenWidth;
+				}
+			}
+		}
+	}
+
+
+	//	Counters in vertical submenus
+	@if ( $mm_opt_vertical )
+	{
+		.mm-listitem_vertical
+		{
+			> .mm-counter
+			{
+				top: ( $mm_btnSize / 4 ) + 2;
+				margin-top: 0;
+			}
+			&.mm-listitem_spacer > .mm-counter
+			{
+				margin-top: $mm_btnSize;
+			}
+		}
+	}
+
+	// Searchfield
+	@if ( $mm_opt_searchfield )
+	{
+		.mm-listitem_nosubitems > .mm-counter
+		{
+			display: none;
+		}
+	}
+
+
+	@include mm_counters_colors;
+}

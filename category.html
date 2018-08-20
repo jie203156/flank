@@ -89,7 +89,7 @@
 
 <script type="text/html" id="getcategory">
     {{each result v i}}
-    <div><a href="#">{{v.category}}</a></div>
+    <div><a href="./productList.html"  class="getgoodID" data-id="{{v.categoryId}}">{{v.category}}</a></div>
     {{/each}}
     <%if (result.length%3 == 2) {%>
         <div><a href="#"></a></div>

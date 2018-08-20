@@ -1,0 +1,28 @@
+/*
+ * jQuery mmenu fullscreen extension
+ * mmenu.frebsite.nl
+ */
+
+@import "../../mixins";
+@import "../../variables";
+
+$mm_fullscreen_full		: 1;
+$mm_fullscreen_min		: 140px;
+$mm_fullscreen_max		: 10000px;
+
+
+@if ( $mm_opt_fullscreen )
+{
+	@include mm_offcanvas_size( ".mm-menu_fullscreen",
+		$mm_fullscreen_full, $mm_fullscreen_min, $mm_fullscreen_max );
+
+//	TODO position
+	@include mm_position_right( ".mm-menu_fullscreen",
+		$mm_fullscreen_full, $mm_fullscreen_min, $mm_fullscreen_max);
+
+	@include mm_position_top( ".mm-menu_fullscreen",
+		$mm_fullscreen_full, $mm_fullscreen_min, $mm_fullscreen_max );
+
+	@include mm_position_bottom( ".mm-menu_fullscreen",
+		$mm_fullscreen_full, $mm_fullscreen_min, $mm_fullscreen_max );
+}

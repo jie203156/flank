@@ -1,0 +1,75 @@
+/*	
+ * jQuery mmenu sectionIndexer add-on
+ * mmenu.frebsite.nl
+ */
+
+@import "../../mixins";
+@import "../../variables";
+
+
+@if ( $mm_opt_sectionindexer )
+{
+	.mm-sectionindexer
+	{
+		background: inherit;
+		text-align: center;
+		font-size: 12px;
+
+		box-sizing: border-box;
+		width: $mm_sectionIndexerWidth;
+
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: -$mm_sectionIndexerWidth;
+		z-index: 15;
+		
+		transition: right $mm_transitionDuration $mm_transitionFunction;
+		
+		//	Bugfix
+		//	transform: translate3d( 0, 0, 0 );
+		@include mm_translate( 0, 0 );
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+
+		a
+		{
+			line-height: 1;
+			text-decoration: none;
+			display: block;
+		}
+
+		~ .mm-panels
+		{
+			transition: right $mm_transitionDuration $mm_transitionFunction;
+		}
+	}
+	.mm-menu_has-sectionindexer
+	{
+		.mm-sectionindexer
+		{
+			right: 0;
+		}
+		.mm-panels
+		{
+			right: $mm_sectionIndexerWidth;
+		}
+	}
+
+	@if ( $mm_opt_navbars )
+	{
+		@include mm_sectionindexer_position( 'top', 1 );
+		@include mm_sectionindexer_position( 'top', 2 );
+		@include mm_sectionindexer_position( 'top', 3 );
+		@include mm_sectionindexer_position( 'top', 4 );
+
+		@include mm_sectionindexer_position( 'bottom', 1 );
+		@include mm_sectionindexer_position( 'bottom', 2 );
+		@include mm_sectionindexer_position( 'bottom', 3 );
+		@include mm_sectionindexer_position( 'bottom', 4 );
+	}
+
+	@include mm_sectionindexer_colors;
+}

@@ -1,0 +1,133 @@
+@import "common.scss";
+
+@function pr($p) {
+    @return $p/121+rem;
+}
+
+.container {
+    padding: 0;
+    .main {
+        .barT {
+            height: pr(118);
+            background-color: #fff;
+            display: flex;
+            border-top: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+            .breadcrumb {
+                flex: 1;
+                height: 100%;
+                background-color: #fff;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                li {
+                    height: pr(50);
+                }
+                .active {
+
+                    width: pr(350);
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            .mui-btn {
+                width: pr(200);
+                border: 0;
+            }
+        }
+
+        .content {
+            margin-bottom: pr(20);
+            .goodInfo {
+                height: pr(1150);
+                background-color:#fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                .pic {
+                    height: pr(800);
+                    width: pr(800);
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .info {
+                    padding: pr(20);
+                    color: #000000;
+                    font-size: pr(40);
+                }
+                .bijia {
+                    height: pr(103);
+                    width: 100%;
+                    background-color: green;
+                    display: flex;
+                    div {
+                        flex: 1;
+                        height: 100%;
+                        // border-left: 1px solid #c86728;
+                        border-top: pr(1) solid #c86728;
+                        border-bottom: pr(1) solid #c86728;
+                        background: linear-gradient(to top, #ffbb03, #ffcf4a);
+                        font-size: pr(43);
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                    }
+
+                }
+
+                .shop {
+                    height: pr(150); 
+                    width: 100%;
+                    background-color: #fff;
+                    border-top:1px solid #cccccc; 
+                    display: flex;
+                    align-items: center;
+                    padding: 0 pr(20);
+                }
+            }
+        }
+
+        .comment {
+            // background-color: skyblue;
+            .headtxt {
+                height: pr(100);
+                background-color: #dbdbdb;
+                color: black;
+                font-size: pr(44);
+                line-height: pr(100);
+                text-align: center;
+                box-shadow: 0px pr(4) 1px pr(-5) #000;
+                margin-bottom: pr(5);
+            }
+            .comments {
+                padding:pr(20)  pr(40);
+                // height: pr(686);
+                background-color: #fff;
+                border-bottom: 1px solid #ccc;
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: pr(10);
+                    color: #666666;
+                }
+                .comFrom {
+                    color: #666666;
+                }
+                .comContent {
+                    margin-top: pr(100);
+                }
+                .huifu {
+                    color: skyblue;
+                }
+            }
+        }
+    }
+
+}

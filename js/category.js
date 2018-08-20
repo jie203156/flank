@@ -15,6 +15,8 @@ $(function(){
                     dataType:"json",
                     data:{titleid:$(ele).data("id")},
                     success:function(obj){  
+                        // console.log(obj);
+                        
                     var htmls = template('getcategory',obj);     
                     $(ele).html(htmls);
                     }
@@ -23,6 +25,11 @@ $(function(){
 
 
         }
+    })
+
+    $('.showList').on('click','.getgoodID',function(){
+        var categoryId = $(this).data('id');
+        sessionStorage.setItem('categoryId',categoryId);
     })
 
 })

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <!-- <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-itunes-app" content="app-id=933106331" /> -->
+
+    <title>Document</title>
+
+    <!-- 导入jQuery模板 -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 导入mui插件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <!-- 导入字体图标 -->
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- 导入分页插件 -->
+    <script src="./lib/beneverard-jqPagination-af4e503//js/jquery.jqpagination.min.js"></script>
+    <!-- 导入侧边栏插件 -->
+    <link rel="stylesheet" href="./lib/jQuery.mmenu-master/dist/jquery.mmenu.all.css">
+    <script src="./lib/jQuery.mmenu-master/dist/jquery.mmenu.all.js"></script>
+    <!-- 导入bootstrap插件 -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 导入css模板 -->
+    <link rel="stylesheet" href="./css/productList.css">
+    <script src="./js/productList.js"></script>
+    <script src="./js/common.js"></script>
+
+</head>
+<body>
+
+    <div id="page">
+			<!-- 主页部分 -->  
+        <div class="container">
+
+                <!-- 头部制作 -->
+                <div class="header">
+                    <div class="topNav">
+                        <a href="./index.html"><img src="./images/TB2cMR0aQUmBKNjSZFOXXab2XXa_!!690311.png" alt=""></a>
+                        <a href="#" class="loading"><img src="./images/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt=""></a>
+                    </div>
+                    <div class="search">
+                        <input type="text"  placeholder="请输入你想比价的商品">
+                        <button class="mui-btn mui-btn-primary searchBtn">搜索</button>
+                    </div>
+                </div>
+                <!-- 中间内容制作 -->
+                <div class="main">
+                    <div class="barT">
+        
+                        <ol class="breadcrumb">
+                             <!-- 渲染接口 -->
+                        </ol>
+                        <a href="#menu"><button type="button" class="mui-btn mui-btn-outlined mui-action-menu"><i class="mui-icon mui-icon-bars"></i>&nbsp筛选</button></a>
+                        
+                    </div>
+        
+                    <div class="content">
+                        <ul class="goodLists">
+                            <!-- 渲染接口 -->
+                            </li>
+        
+        
+                        </ul>
+                    </div>
+                    <!-- 分页制作 -->
+                    <div class="pagination">
+        
+                        <a href="#" class="first" data-action="first">首页</a>
+                        <a href="#" class="previous" data-action="previous">上一页</a>
+                        <input type="text" readonly="readonly" />
+                        <a href="#" class="next" data-action="next">下一页</a>
+                        <a href="#" class="last" data-action="last">尾页</a>
+        
+                    </div>
+        
+        
+                </div>
+        
+                <!-- 尾部制作 -->
+                <div class="footer">
+                    <div class="btnS">
+                        <button >登录</button>
+                        <button >注册</button>
+                        <button ><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
+                    </div>
+                    <div class="footerTxt">
+                        <p><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a> &nbsp慢慢买手机版 -- 掌上比价平台</p>
+                        <p><a href="./index.html" class="web">m.manmanbuy.com</a></p>
+                    </div>
+                </div>
+           
+        </div>
+    </div>
+    
+        <nav id="menu">
+            <ul id="panel-menu">
+
+                <li>
+                    <a>
+                        <div class="top">
+                            <div>
+                                <span class="big">品牌</span>
+                                <span>全部品牌</span>
+                            </div>
+
+                            <i class="fa fa-angle-down " aria-hidden="true"></i>
+                        </div>
+                        <ul>
+                            <li class="active">全部品牌</li>
+                            <li>海信</li>
+                            <li>夏普</li>
+                            <li>小米</li>
+                            <li>创维</li>
+                            <li>TCL</li>
+                        </ul>
+                    </a>
+                </li>
+                
+                <li>
+                        <a>
+                            <div class="top">
+                                <div>
+                                    <span class="big">品类</span>
+                                    <span>全部品类</span>
+                                </div>
+    
+                                <i class="fa fa-angle-down " aria-hidden="true"></i>
+                            </div>
+                            <ul>
+                                <li class="active">全部品类</li>
+                                <li>液晶电视</li>
+                                <li>曲面电视</li>
+                                <li>3D电视</li>
+                                <li>会议/广告机</li>
+                                <li>激光/影院电视</li>
+                            </ul>
+                        </a>
+                </li>
+                <li>
+                        <a>
+                            <div class="top">
+                                <div>
+                                    <span class="big">尺寸</span>
+                                    <span>全部尺寸</span>
+                                </div>
+    
+                                <i class="fa fa-angle-down " aria-hidden="true"></i>
+                            </div>
+                            <ul>
+                                <li class="active">全部尺寸</li>
+                                <li>32英寸以下</li>
+                                <li>32英寸</li>
+                                <li>37-39英寸</li>
+                                <li>40-42英寸</li>
+                                <li>43-45英寸</li>
+                            </ul>
+                        </a>
+                </li>
+                <li>
+                        <a>
+                            <div class="top">
+                                <div>
+                                    <span class="big">分辨率</span>
+                                    <span>全部分辨率</span>
+                                </div>
+    
+                                <i class="fa fa-angle-down " aria-hidden="true"></i>
+                            </div>
+                            <ul>
+                                <li class="active">全部分辨率</li>
+                                <li>超高清4K</li>
+                                <li>全高清1080P</li>
+                                <li>高清720P</li>
+                                <li>其它</li>
+                                <li class="opc">无</li>
+                            </ul>
+                        </a>
+                </li>
+                <li>
+                        <a>
+                            <div class="top">
+                                <div>
+                                    <span class="big">功能</span>
+                                    <span>全部功能</span>
+                                </div>
+    
+                                <i class="fa fa-angle-down " aria-hidden="true"></i>
+                            </div>
+                            <ul>
+                                <li class="active">全部功能</li>
+                                <li>智能网络电视</li>
+                                <li>普通电视</li>
+                                
+                            </ul>
+                        </a>
+                </li>
+
+                <li>
+                        <a>
+                            <div class="top">
+                                <div>
+                                    <span class="big">3D</span>
+                                    <span>全部3D</span>
+                                </div>
+    
+                                <i class="fa fa-angle-down " aria-hidden="true"></i>
+                            </div>
+                            <ul>
+                                <li class="active">全部3D</li>
+                                <li>支持3D</li>
+                                <li>不支持3D</li>
+                                
+                            </ul>
+                        </a>
+                </li>
+                <li>
+                        <a>
+                            <div class="top">
+                                <div>
+                                    <span class="big">观看距离</span>
+                                    <span>全部观看距离</span>
+                                </div>
+    
+                                <i class="fa fa-angle-down " aria-hidden="true"></i>
+                            </div>
+                            <ul>
+                                <li class="active">全部观看距离</li>
+                                <li>小卧室(1.7米...</li>
+                                <li>小卧室/卧室(...</li>
+                                <li>小卧室/卧室(...</li>
+                                <li>中客厅(3.1~4...</li>
+                                <li>大客厅(4.1~5...</li>
+                                
+                            </ul>
+                        </a>
+                </li>
+
+                <li>
+                        <a>
+                            <div class="top">
+                                <div>
+                                    <span class="big">价格</span>
+                                    <span>全部价格</span>
+                                </div>
+    
+                                <i class="fa fa-angle-down " aria-hidden="true"></i>
+                            </div>
+                            <ul>
+                                <li class="active">全部价格</li>
+                                <li>1-1499</li>
+                                <li>1500-2999</li>
+                                <li>3000-4499</li>
+                                <li>4500-5999</li>
+                                <li>6000-7999</li>
+                                
+                            </ul>
+                        </a>
+                </li>
+
+                <li>
+                        <a>
+                            <div class="top">
+                                <div>
+                                    <span class="big">评论</span>
+                                    <span>全部评论</span>
+                                </div>
+    
+                                <i class="fa fa-angle-down " aria-hidden="true"></i>
+                            </div>
+                            <ul>
+                                <li class="active">全部评论</li>
+                                <li>4.8分及以上</li>
+                                <li>4.6分及以上</li>
+                                <li>4.4分及以上</li>
+                                <li>4.2分及以上</li>
+                                <li>4分及以上</li>
+                                
+                            </ul>
+                        </a>
+                </li>
+            </ul>
+
+ 
+        </nav>
+
+
+</body>
+</html>
+
+<!-- 获取面包屑导航接口 -->
+<script type="text/html" id="getcategory">
+
+    <li><a href="./index.html">首页</a></li>
+    <li><a href="./category.html">全部分类</a></li>
+    <li class="active">{{category}}</li>
+
+</script>
+
+<script type="text/html" id="getproductlist">
+    
+{{each result v i}}
+
+    <li>
+        <a href="./product.html" data-id="{{v.productId}}" >
+            <div class="goodPic">
+                {{@v.productImg}}
+            </div>
+            <div class="goodInfo">
+                <p class="txt">
+                    {{v.productName}}
+                </p>
+                <p class="price"> {{v.productPrice}}</p>
+                <p class="comment">
+                    <span>商城{{v.productQuote}}家</span>
+                    <span>{{v.productCom}}条</span>
+                </p>
+            </div>
+        </a>
+    </li>
+
+{{/each}}
+
+</script>
+
+
+
+

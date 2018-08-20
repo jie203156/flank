@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <!-- <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-itunes-app" content="app-id=933106331" /> -->
+
+    <title>Document</title>
+
+    <!-- 导入jQuery模板 -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 导入mui插件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <!-- 导入字体图标 -->
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- 导入分页插件 -->
+
+    <script src="./lib/beneverard-jqPagination-af4e503//js/jquery.jqpagination.min.js"></script>
+    <!-- <link rel="stylesheet" href="./lib/beneverard-jqPagination-af4e503/css/jqpagination.css"> -->
+        <!-- <script src="./lib/twbs-pagination/jquery.twbsPagination.min.js"></script> -->
+    <!-- 导入bootstrap插件 -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 导入css模板 -->
+    <link rel="stylesheet" href="./css/product.css">
+    <script src="./js/product.js"></script>
+    <script src="./js/common.js"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- 头部制作 -->
+        <div class="header">
+            <div class="topNav">
+                <a href="./index.html"><img src="./images/TB2cMR0aQUmBKNjSZFOXXab2XXa_!!690311.png" alt=""></a>
+                <a href="#" class="loading"><img src="./images/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt=""></a>
+            </div>
+            <div class="search">
+                <input type="text"  placeholder="请输入你想比价的商品">
+                <button class="mui-btn mui-btn-primary searchBtn">搜索</button>
+            </div>
+        </div>
+        <!-- 中间内容制作 -->
+        <div class="main">
+            <div class="barT">
+
+                <ol class="breadcrumb">
+                     <!-- 渲染接口 -->
+                </ol>
+            </div>
+
+            <div class="content">
+                <div class="goodInfo">
+                    <!-- 模板引擎生成 -->
+                </div>
+            </div>
+
+            <div class="comment">
+                <!-- 模板引擎生成 -->
+            </div>
+        </div>
+
+        <!-- 尾部制作 -->
+        <div class="footer">
+            <div class="btnS">
+                <button >登录</button>
+                <button >注册</button>
+                <button ><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
+            </div>
+            <div class="footerTxt">
+                <p><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a> &nbsp慢慢买手机版 -- 掌上比价平台</p>
+                <p><a href="./index.html" class="web">m.manmanbuy.com</a></p>
+            </div>
+        </div>
+   
+    </div>
+
+</body>
+</html>
+
+<!-- 获取面包屑导航接口 -->
+<script type="text/html" id="getproduct">
+
+    <li><a href="./index.html">首页</a></li>
+    <li><a href="./category.html">全部分类</a></li>
+    <li><a href="./productList.html">{{category}}</a></li>
+    <li class="active">{{result[0].productName}}</li>
+
+</script>
+
+<script type="text/html" id="getproductbj">
+    <div class="pic">
+            {{@result[0].productImg}}
+        </div>
+        <p class="info">
+                {{@result[0].productName}}
+        </p>
+        <div class="bijia">
+            <div>比价购买</div>
+            <div>产品参数</div>
+            <div>优选评价</div>
+        </div>
+        <div class="shop">
+                {{@result[0].bjShop}}
+        </div>
+</script>
+
+<script type="text/html" id="getproductcom">
+
+    <div class="headtxt">
+            优选网友评论
+    </div>
+
+    {{each result value i}}
+
+    <div class="comments">
+        <div class="top">
+            <div class="comName">{{value.comName}}</div>
+            <div class="comTime">{{value.comTime}}</div>
+        </div>
+        <div class="comFrom mui-pull-right">{{value.comFrom}}</div>
+        <div class="comContent">{{value.comContent}}</div>
+        <div class="huifu">回复</div>
+    </div>
+    {{/each}}
+</script>
+
+
+
+

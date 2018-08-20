@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>jQuery.mmenu demo</title>
+
+		<link type="text/css" rel="stylesheet" href="css/demo.css" />
+		<link type="text/css" rel="stylesheet" href="../dist/jquery.mmenu.all.css" />
+		
+		<!-- for the one page layout -->
+		<style type="text/css">
+			section
+			{
+				border-top: 1px solid #ccc;
+				padding: 150px 0 200px;
+			}
+			section:first-child
+			{
+				border-top: none;
+				padding-top: 0;
+			}
+		</style>
+		
+		<!-- for the fixed header -->
+		<style type="text/css">
+			.header,
+			.footer
+			{
+				position: fixed;
+				left: 0;
+				right: 0;
+			}
+			.header
+			{
+				top: 0;
+			}
+			.footer
+			{
+				bottom: 0;
+			}
+			@media (min-width: 800px) {
+				.header a
+				{
+					display: none;
+				}
+			}
+		</style>
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="http://cdn.jsdelivr.net/hammerjs/2.0.8/hammer.min.js"></script>
+
+		<script type="text/javascript" src="../dist/jquery.mmenu.all.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					drag 		: true,
+					pageScroll 	: {
+						scroll 		: true,
+						update		: true
+					},
+					// extensions: {
+					// 	'all': ['pagedim-white'],
+					// 	'(min-width: 400px)' : ['pagedim-black']
+					// },
+					sidebar 	: {
+						expanded 	: 800
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<div class="header Fixed">
+				<a href="#menu"><span></span></a>
+				Demo
+			</div>
+			<div class="content" id="content">
+				<section id="intro">
+					<p><strong>This is a demo</strong><br />
+						Click the menu icon to open the menu.</p>
+					<p>Some of the links in the menu link to a section on this page.</p>
+				</section>
+				<section id="widescreen">
+					<p><strong>Widescreen extension</strong><br />
+						On wider screens, the menu will always be opened.</p>
+					<p><a href="#menu">Open the menu.</a></p>
+				</section>
+				<section id="drag">
+					<p><strong>Drag add-on</strong><br />
+						You can also drag the page to the right to open the menu.</p>
+					<p><a href="#menu">Open the menu.</a></p>
+				</section>
+				<section id="fixed">
+					<p><strong>Fixed elements</strong><br />
+						Notice how the fixed header and footer slide out along with the page.</p>
+					<p><a href="#menu">Open the menu.</a></p>
+				</section>
+			</div>
+			<div class="footer Fixed">
+				Fixed footer :-)
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="#content">Introduction</a></li>
+					<li><a href="#widescreen">Widescreen extension</a></li>
+					<li><a href="#drag">Drag add-on</a></li>
+					<li><a href="#fixed">Fixed elements</a></li>
+
+					<li class="Divider">Other demos</li>
+					<li><a href="default.html">Default demo</a></li>
+					<li><a href="advanced.html">Advanced demo</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,167 @@
+@import "common.scss";
+@function pr($p) {
+    @return $p/121+rem;
+}
+.container {
+    padding: 0;
+    .main {
+        .barT {
+            height: pr(118);
+            background-color: #fff;
+            display: flex;
+            border-top: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+            .breadcrumb {
+                flex: 1;
+                height: 100%;
+                background-color: #fff;
+                margin: 0;
+            }
+
+            .mui-btn {
+                width: pr(200);
+                border: 0;
+            }
+        }
+        .content {
+            .goodLists {
+                li {
+                    height: pr(418);
+                    background-color: #fff;
+                    border-bottom: 1px solid #e6e6e6;
+                    a {
+                        display: flex;
+                        height: 100%;
+                        text-decoration: none;
+                        .goodPic {
+                            width: pr(420);
+                            height: 100%;
+                            padding: pr(24);
+                            img {
+                                width: 100%;
+                            }
+                        }
+    
+                        .goodInfo {
+                            flex: 1;
+                            height: 100%;
+                            padding: pr(30);
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            .txt {
+                                font-size: pr(45);
+                                line-height: pr(70);
+                                color: #333333;
+                            }
+
+                            .price {
+                                font-size: pr(45);
+                                font-weight: bold;
+                                color: #ed0000;
+                            }
+                            .comment {
+                                display: flex;
+                                justify-content: space-between;
+                                font-size: pr(38);
+                                color: #a1a1a1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pagination {
+            margin: 0;
+            height: pr(200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            input {
+                width: pr(240);
+                margin: 0;
+                height: pr(80);
+                font-size: pr(34); 
+                display: flex;
+                padding: 0;
+                text-align: center;
+            }
+            a {
+                height: pr(80);
+                width: pr(160);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #d9d9d9;
+                font-size: pr(34);
+                text-decoration: none;
+                
+            }
+        }
+    }
+
+}
+
+#menu {
+    background-color: #fff;
+    font-size: pr(62);
+    color: #000000;
+    #panel-menu {
+        li {
+            // height: pr(400);
+            a {
+
+                font-size: pr(40);
+
+                .top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .big {
+                        font-size: pr(45);
+                        color: #000;
+                        margin-right: pr(20);
+                    }
+                    span {
+                        font-size: pr(35);
+                        color: #ff5000;
+                    }
+                    .fa {
+                        font-size: pr(35);
+                        float: right;
+        
+                    }
+                }
+
+                ul {
+                    margin-top: pr(20);
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    li {
+                        height: pr(80);
+                        width: 30%;
+                        background-color: #f2f2f2;
+                        color: #5a5a5a;
+                        font-size: pr(35);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: pr(20);
+                        margin-bottom: pr(20);
+
+                        &.active {
+                        background-color: #ff5000;
+                        color: #fff;
+                        }
+                        &.opc {
+                            opacity: 0;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

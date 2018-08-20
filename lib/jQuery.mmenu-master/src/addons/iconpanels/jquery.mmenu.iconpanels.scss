@@ -1,0 +1,79 @@
+/*	
+ * jQuery mmenu iconPanels add-on
+ * mmenu.frebsite.nl
+ */
+
+@import "../../mixins";
+@import "../../variables";
+
+
+@if ( $mm_opt_iconpanels )
+{
+	[class*="mm-menu_iconpanel-"] .mm-panels 
+	{
+		> .mm-panel
+		{
+			transition-property: transform, left;
+		}
+
+		> .mm-panel_iconpanel-first,
+		> .mm-panel_iconpanel-first.mm-panel_opened ~ .mm-listview_fixeddivider
+		{
+			left: 0;
+		}
+
+		> .mm-panel_opened,
+		> .mm-panel_opened-parent
+		{
+			display: block !important;
+
+			&[class*="mm-panel_iconpanel-"]:not( .mm-panel_iconpanel-first ):not( .mm-panel_iconpanel-0 ),
+			{
+				border-left: 1px solid;
+				border-color: inherit;
+			}
+		}
+		> .mm-panel_opened-parent
+		{
+			overflow-y: hidden;
+			@include mm_translate( 0, 0 );
+		}
+	}
+	[class*="mm-menu_iconpanel-"]
+	{
+		&.mm-menu_hidenavbar .mm-panel_opened-parent .mm-navbar,
+		&.mm-menu_hidedivider .mm-panel_opened-parent .mm-listitem_divider
+		{
+			opacity: 0;
+		}
+	}
+
+	@each $size in $mm_iconpanelSizes
+	{
+		@include mm_iconpanel_size( $size );
+	}
+}
+
+@if ( $mm_opt_iconpanels_blocker )
+{
+	.mm-panel__blocker
+	{
+		background: inherit;
+		opacity: 0;
+		display: block;
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 3;
+
+		transition: opacity $mm_transitionDuration $mm_transitionFunction;
+	}
+
+	.mm-panel_opened-parent .mm-panel__blocker
+	{
+		opacity: 0.6;
+		bottom: -100000px;
+	}
+}
