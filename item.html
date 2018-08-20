@@ -42,7 +42,7 @@
                         <div class="text">京东</div>
                         <i class="fa fa-caret-up" aria-hidden="true"></i>
                     </div>
-                    <div class="place">
+                    <div class="place" data-flag="0">
                         <div class="text">华北</div>
                         <i class="fa fa-caret-up" aria-hidden="true"></i>
                     </div>
@@ -133,11 +133,15 @@
 <!-- 店铺名模板 -->
 <script id="shoplist" type="text/html">
     {{ each result v i }}
-    <li data-shopid={{ v.shopId }}>
+    <li data-shopid={{ v.shopId }} data-id={{ i }}>
         <div class="text">{{ v.shopName }}</div>
+<<<<<<< HEAD
+        <i class="fa fa-check" aria-hidden="true"></i>
+=======
         {{ if i == 0 }}
         <i class="fa fa-check" aria-hidden="true"></i> {{ else }}
         <i class="fa" aria-hidden="true"></i> {{ /if }}
+>>>>>>> 86dcff577069fe61e04766819e2351f69c93e0dc
     </li>
     {{ /each }}
 </script>
@@ -146,11 +150,15 @@
 <!-- 地区模版 -->
 <script id="placelist" type="text/html">
     {{ each result v i }}
-    <li data-areaid={{ v.areaId }}>
+    <li data-areaid={{ v.areaId }} data-flag={{ i }}>
         <div class="text">{{ v.areaName }}</div>
+<<<<<<< HEAD
+        <i class="fa fa-check" aria-hidden="true"></i>
+=======
         {{ if i == 0 }}
         <i class="fa fa-check" aria-hidden="true"></i> {{ else }}
         <i class="fa" aria-hidden="true"></i> {{ /if }}
+>>>>>>> 86dcff577069fe61e04766819e2351f69c93e0dc
     </li>
     {{ /each }}
 </script>
