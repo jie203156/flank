@@ -161,6 +161,10 @@ i {
   color: #666666;
 }
 
+body, html {
+  height: 100%;
+}
+
 .container .header .topNav {
   background-color: #f4483e;
 }
