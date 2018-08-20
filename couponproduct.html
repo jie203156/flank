@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,8 +10,8 @@
     <meta content="telephone=no" name="format-detection" />
     <meta name="apple-itunes-app" content="app-id=933106331" /> -->
 
-    <title>Document</title>
-
+    <title>优惠券</title>
+    <link rel="icon" href="images/ic_temai.png" type="image/x-icon">
     <!-- 导入jQuery模板 -->
     <script src="./lib/jquery/jquery.min.js"></script>
     <!-- 导入mui插件 -->
@@ -28,8 +29,9 @@
     <script src="./js/common.js"></script>
 
 </head>
+
 <body>
-    
+
     <div class="container">
 
         <!-- 头部制作 -->
@@ -42,21 +44,21 @@
         </div>
         <!-- 中间内容制作 -->
         <div class="main">
-                <div class="mui-scroll-wrapper">
-                        <div class="mui-scroll">
-                            <!--这里放置真实显示的DOM内容-->
-                            <p class="hint">--点餐前出示手机中的优惠券，即可享受优惠--</p>
-                            <div class="products"></div>
-                        </div>
-                    </div>
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!--这里放置真实显示的DOM内容-->
+                    <p class="hint">--点餐前出示手机中的优惠券，即可享受优惠--</p>
+                    <div class="products"></div>
+                </div>
+            </div>
 
         </div>
         <!-- 尾部制作 -->
         <div class="footer">
             <div class="btnS">
-                <button >登录</button>
-                <button >注册</button>
-                <button ><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
+                <button>登录</button>
+                <button>注册</button>
+                <button><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
             </div>
             <div class="footerTxt">
                 <p><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a> &nbsp慢慢买手机版 -- 掌上比价平台</p>
@@ -65,32 +67,31 @@
         </div>
 
         <div class="hidden">
-                <span class="front mui-icon mui-icon-back"></span>
-                <img src="./images/60x60.gif" alt="">
-                <span class="back mui-icon mui-icon-forward"></span>
-            </div>
+            <span class="front mui-icon mui-icon-back"></span>
+            <img src="./images/60x60.gif" alt="">
+            <span class="back mui-icon mui-icon-forward"></span>
+        </div>
 
     </div>
 
 </body>
+
 </html>
 <script type="text/html" id="product">
     {{each list v i}}
     <div class="product">
-            <div class="info" data-id="couponProductId">
-                <div class="detail">
-                    {{#v.couponProductImg}}
-                    <div class="text">
-                            <p class="desc">{{v.couponProductName}}</p>
-                            <p class="price">{{v.couponProductPrice}}</p>
-                    </div>
-                    
+        <div class="info" data-id="couponProductId">
+            <div class="detail">
+                {{#v.couponProductImg}}
+                <div class="text">
+                    <p class="desc">{{v.couponProductName}}</p>
+                    <p class="price">{{v.couponProductPrice}}</p>
                 </div>
-                <p class="time">{{v.couponProductTime}}</p>
+
             </div>
-            <a href="#"><span class="mui-icon mui-icon-forward"></span></a>
+            <p class="time">{{v.couponProductTime}}</p>
         </div>
+        <a href="#"><span class="mui-icon mui-icon-forward"></span></a>
+    </div>
     {{/each}}
 </script>
-
-

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>品牌大全</title>
@@ -18,71 +19,73 @@
     <!-- 导入字体图标 -->
     <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/pinpaidaquan1.css">
-    <link rel="icon" href="./images/icommm.png">
+    <link rel="icon" href="./images/ic_pp.png">
 
 
 </head>
+
 <body>
-<!--t头部-->
-<div class="header">
-    <div class="top">
-        <img class="img1" src="./images/logo22.png" alt="">
-        <img class="img2" src="./images/logo11.png" alt="">
-    </div>
-    <div class="bottom">
-        <input class="txt" type="text" placeholder="请输入你想比价的商品">
-        <input class="btn" type="button" value="搜索">
-    </div>
-    <div class="nav">
-        <div class="nav1">
-            <a href="#">首页</a>><a href="#">品牌大全</a>
+    <!--t头部-->
+    <div class="header">
+        <div class="top">
+            <img class="img1" src="./images/logo22.png" alt="">
+            <img class="img2" src="./images/logo11.png" alt="">
         </div>
-    </div>
-    <div class="nav3">
-        <p>热门品牌排行</p>
-    </div>
+        <div class="bottom">
+            <input class="txt" type="text" placeholder="请输入你想比价的商品">
+            <input class="btn" type="button" value="搜索">
+        </div>
+        <div class="nav">
+            <div class="nav1">
+                <a href="#">首页</a>><a href="#">品牌大全</a>
+            </div>
+        </div>
+        <div class="nav3">
+            <p>热门品牌排行</p>
+        </div>
 
-
-</div>
-<!--内容-->
-<div class="main">
-    <div class="content">
-        <ul class="mui-table-view brandname">
-            <li class="mui-table-view-cell">
-                <a class="mui-navigate-right">平板电视十大品牌</a>
-            </li>
-            <li class="mui-table-view-cell">
-                <a class="mui-navigate-right">平板电视十大品牌</a>
-            </li>
-            <li class="mui-table-view-cell">
-                <a class="mui-navigate-right">平板电视十大品牌</a>
-            </li>
-        </ul>
 
     </div>
+    <!--内容-->
+    <div class="main">
+        <div class="content">
+            <ul class="mui-table-view brandname">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">平板电视十大品牌</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">平板电视十大品牌</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">平板电视十大品牌</a>
+                </li>
+            </ul>
 
-</div>
-<!--底部-->
-<div class="footer">
-    <div class="bottom">
-        <a href="">登录</a>
-        <a href="">注册</a>
-        <a class="back_to_top"><span class="mui-icon-upload"></span>返回顶部</a>
+        </div>
+
     </div>
-    <div class="bottom1">
-        <p><span>手机APP下载</span>慢慢买手机版--掌上比价平台</p>
-        <p>m.manmanbuy.com </p>
+    <!--底部-->
+    <div class="footer">
+        <div class="bottom">
+            <a href="">登录</a>
+            <a href="">注册</a>
+            <a class="back_to_top"><span class="mui-icon-upload"></span>返回顶部</a>
+        </div>
+        <div class="bottom1">
+            <p><span>手机APP下载</span>慢慢买手机版--掌上比价平台</p>
+            <p>m.manmanbuy.com </p>
+        </div>
+
     </div>
 
-</div>
+    <script type="text/html" id="bran">
+        {{each result v i}}
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right" data-id="{{v.brandTitleId}}">{{v.brandTitle}}</a>
+        </li>
+        {{/each}}
 
-<script type="text/html" id="bran">
-  {{each result v i}}
-  <li class="mui-table-view-cell">
-      <a class="mui-navigate-right" data-id="{{v.brandTitleId}}">{{v.brandTitle}}</a>
-  </li>
-    {{/each}}
-
-</script>
+    </script>
 </body>
+
 </html>
