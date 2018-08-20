@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -28,8 +29,9 @@
     <script src="./js/common.js"></script>
 
 </head>
+
 <body>
-    
+
     <div class="container">
 
         <!-- 头部制作 -->
@@ -39,7 +41,7 @@
                 <a href="#" class="loading"><img src="./images/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt=""></a>
             </div>
             <div class="search">
-                <input type="text"  placeholder="请输入你想比价的商品">
+                <input type="text" placeholder="请输入你想比价的商品">
                 <button class="mui-btn mui-btn-primary searchBtn">搜索</button>
             </div>
         </div>
@@ -55,9 +57,9 @@
         <!-- 尾部制作 -->
         <div class="footer">
             <div class="btnS">
-                <button >登录</button>
-                <button >注册</button>
-                <button ><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
+                <button><a href="./login.html">登录</a></button>
+                <button><a href="./register.html">注册</a></button>
+                <button><i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
             </div>
             <div class="footerTxt">
                 <p><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia">手机APP下载</a> &nbsp慢慢买手机版 -- 掌上比价平台</p>
@@ -67,6 +69,7 @@
     </div>
 
 </body>
+
 </html>
 
 <script type="text/html" id="getcategorytitle">
@@ -74,13 +77,13 @@
     {{each result v i}}
 
     <li class="mui-table-view-cell mui-collapse showCategory">
-            <a class="mui-navigate-right" href="#">{{v.title}}</a>
-            <div class="mui-collapse-content">
-                <div class="getcategory" data-id="{{i}}">
-                </div>
-                
+        <a class="mui-navigate-right" href="#">{{v.title}}</a>
+        <div class="mui-collapse-content">
+            <div class="getcategory" data-id="{{i}}">
             </div>
-        </li>
+
+        </div>
+    </li>
 
     {{/each}}
 
@@ -92,11 +95,16 @@
     <div><a href="#">{{v.category}}</a></div>
     {{/each}}
     <%if (result.length%3 == 2) {%>
-        <div><a href="#"></a></div>
-    <%}%>
-    <%if (result.length%3 == 1) {%>
-        <div><a href="#"></a></div>
-        <div><a href="#"></a></div>
-    <%}%>
+        <div>
+            <a href="#"></a>
+        </div>
+        <%}%>
+            <%if (result.length%3 == 1) {%>
+                <div>
+                    <a href="#"></a>
+                </div>
+                <div>
+                    <a href="#"></a>
+                </div>
+                <%}%>
 </script>
-

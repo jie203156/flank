@@ -42,6 +42,11 @@ $(function() {
         location.href = "discounts.html";
     });
 
+    //链接历史价格查询
+    $(".getindexmenu").on("click", "div:nth-child(7)", function() {
+        location.href = "pricehistory.html";
+    });
+
     //链接凑单价
     $(".getindexmenu").on("click", "div:nth-child(9)", function() {
         location.href = "item.html";
@@ -53,7 +58,7 @@ $(function() {
     });
 
     $(".getindexmenu").on("click", "div:nth-child(11)", function() {
-        alert("a");
+        location.href = "commodity.html";
     });
 
     //链接品牌大全
