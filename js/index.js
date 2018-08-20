@@ -27,6 +27,11 @@ $(function() {
         location.href = "qzk-getmoneyctrl.html";
     });
 
+    //链接白菜价
+    $(".getindexmenu").on("click", "div:nth-child(4)", function() {
+        location.href = "bargain.html";
+    });
+
     //链接海海折扣
     $(".getindexmenu").on("click", "div:nth-child(5)", function() {
         location.href = "http://www.liebiao.com/fuzhuangxiangbao/s-haihaitongzhuangshekoujiameng/";
