@@ -31,11 +31,14 @@ Mmm.prototype = {
         $('.mui-numbox-input').on('change', function() {
             var zhi = $(this).val();
             console.log(zhi);
+            if (zhi == 1) {
+                $('body,html').animate({ scrollTop: 0 }, 500);
+            }
 
             $.ajax({
                 url: "http://mmb.ittun.com/api/getmoneyctrl",
                 data: {
-                    pageid: zhi - 1
+                    pageid: zhi
                 },
                 success: function(data) {
                     // console.log(data);

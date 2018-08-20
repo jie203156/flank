@@ -1,0 +1,108 @@
+@import "./common.scss";
+
+.header {
+    width: 100%;
+    height: pr(133);
+    background-color: #ff8b00;
+    display: flex;
+    align-items: center;
+
+    a {
+        // padding-left: pr(60);
+        margin-left: pr(40);
+        font-size: pr(54);
+        color: white;
+    }
+
+    span {
+        flex: 1;
+        display: flex;
+        font-size: pr(58);
+        color: white;
+        justify-content: center;
+    }
+}
+
+.main {
+    padding: pr(40) pr(30);
+    
+   .link {
+    width: 100%;
+    height: pr(198);
+    border-bottom: pr(1) solid #e3e3e3;
+    // background-color: pink;
+
+    .commodity {
+        font-size: pr(36);
+        color: black;
+        padding-bottom: pr(60);
+    }
+
+    input {
+        width: 100%;
+        font-size: pr(40);
+        color: #d0d0d0;
+    }
+   }
+
+   .query {
+       display: flex;
+       height: pr(373);
+       justify-content: center;
+       align-items: center;
+       margin-bottom: pr(10);
+
+       .searchhistory,.reset {
+        //    height: pr(120);
+           padding: pr(35) pr(50);
+           border: pr(1) solid black;
+           border-radius: pr(70);
+           font-size: pr(45);
+           margin-right: pr(25);
+       }
+   }
+
+   .operate {
+       .bd {
+           margin-top: pr(50);
+           color: #999999;
+
+           p {
+               font-size: pr(34);
+               line-height: pr(70);
+           }
+       }
+   }
+   .llhide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      img {
+          width: pr(1000);
+      }
+      a {
+          color: blue;
+      }
+
+      .abnormal {
+          display: flex;
+          align-self: center;
+      }
+   }
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+
+    span {
+        position: absolute;
+        font-size: pr(70);
+        top:pr(62);
+        left: pr(34);
+        color: #ccc;
+    }
+    img {
+        height: pr(92);
+        width: 100%;
+    }
+}

@@ -161,95 +161,45 @@ i {
   color: #666666;
 }
 
-* {
-  touch-action: none;
+.container {
+  padding: 0;
 }
-
-body, html {
-  height: 100%;
-}
-
-.container .header {
-  flex-basis: 1.2396694215rem;
-}
-.container .header .topNav {
-  background-color: #f4483e;
-}
-.container .header .topNav .mui-icon-back {
-  color: #fff;
-  font-size: 0.4958677686rem;
-}
-.container .header .topNav .title {
-  color: #fff;
-  font-size: 0.5rem;
-}
-.container .main {
-  background-color: #fff;
-  flex: 1;
-  position: relative;
-}
-.container .main .hint {
-  text-align: center;
-  padding-top: 3px;
-}
-.container .main .product {
-  display: flex;
-  border-bottom: 1px solid #ccc;
-  padding-top: 5px;
-}
-.container .main .product .info {
-  flex: 1;
+.container .main form {
+  padding: 0.3140495868rem 0.2479338843rem 0.867768595rem;
   display: flex;
   flex-direction: column;
-  padding: 5px;
 }
-.container .main .product .info .detail {
-  display: flex;
+.container .main form p {
+  font-size: 0.0826446281rem;
+  color: red;
+  opacity: 0;
 }
-.container .main .product .info .detail img {
-  width: 30%;
-  height: 30%;
-  margin-right: 5px;
+.container .main form input {
+  border-radius: 0;
+  height: 0.8925619835rem;
 }
-.container .main .product .info .detail .text {
-  flex: 1;
-}
-.container .main .product .info .detail .text p {
-  color: #333;
-  font-size: 16px;
-}
-.container .main .product .info .detail .text .price {
-  font-weight: 600;
-}
-.container .main .product .info .time {
-  text-align: center;
-  color: orange;
-  margin: 5px 0px;
-}
-.container .main .product a {
-  text-decoration: none;
-  color: #ccc;
-  font-size: 20px;
+.container .main form .gain {
   display: flex;
   align-items: center;
 }
-.container .hidden {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container .main form .gain .randow {
+  flex-basis: 1.6115702479rem;
 }
-.container .hidden span {
-  color: #fff;
+.container .main form .gain .randow img {
+  widows: 100%;
 }
-.container .hidden img {
-  width: 50%;
+.container .main form .gain .text {
+  flex-basis: 2.4380165289rem;
+  margin: 0rem 0.0826446281rem;
+}
+.container .main form .gain .btn-default {
+  flex-basis: 4.132231405rem;
+  margin: 0.2479338843rem 0rem;
+  background: linear-gradient(to right, white, #ccc);
+  border-radius: 0.1652892562rem;
+}
+.container .main form .email {
+  margin-top: 0.2479338843rem;
 }
 
-/*# sourceMappingURL=couponproduct.css.map */
+/*# sourceMappingURL=register.css.map */
