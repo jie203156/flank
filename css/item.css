@@ -167,6 +167,8 @@ em, i {
   align-items: center;
   justify-content: space-between;
   font-size: 0.3801652893rem; }
+.container .main .list li i {
+  display: none; }
 .container .main .filter {
   padding: 0.2479338843rem;
   box-shadow: 0 0 0.2066115702rem 0.0495867769rem #ccc;

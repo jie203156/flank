@@ -8,7 +8,9 @@ $(function () {
 
     var shopid;
     var areaid;
-
+    var flag = 0;
+    var id = 0;
+    
     
     function render(shopid, areaid) {
 
@@ -29,7 +31,6 @@ $(function () {
 
     // 默认加载
     render(0, 0)
-
 
     // 点击事件加载模板
     // 用来获取凑单品的店铺的信息 并渲染到店铺的下拉列表
@@ -60,6 +61,8 @@ $(function () {
 
                 var shoplist = template('shoplist', obj)
                 $('.list').html(shoplist);
+
+                $('.list').find('li').eq(id).find('.fa').show();
             }
         })
 
@@ -70,13 +73,16 @@ $(function () {
     $('.place').on('click', function () {
 
         // 点击后,先让列表隐藏
-        $('.list').hide();
+        // $('.list').hide();
         $('.filter').hide();
         $('.filter').removeClass('state')
         // 然后除这个被点击外的其他盒子都应该修改为朝上
+        // 修改箭头
         $(this).siblings().children('.fa').removeClass('fa-caret-down').addClass('fa-caret-up');
 
-        // 修改箭头
+
+
+
 
 
         $.ajax({
@@ -93,9 +99,13 @@ $(function () {
                 }
                 var placelist = template('placelist', obj)
                 $('.list').html(placelist);
+
+
+                $('.list').find('li').eq(flag).find('.fa').show();
+
+
             }
         })
-
 
     })
 
@@ -117,10 +127,14 @@ $(function () {
         } else {
             $('.price i').removeClass('fa-caret-down').addClass('fa-caret-up');
             $('.list').stop().fadeOut();
+
         }
 
         var pricelist = template('pricelist');
         $('.list').html(pricelist);
+
+
+        
     })
 
 
@@ -158,9 +172,12 @@ $(function () {
             $('.price .text').html(content);
         }
 
+        flag = $(this).data('flag');
+        id = $(this).data('id');
+    
     })
 
-
+    
     // 筛选菜单
     $('.nav>.right').on('click', function () {
 
