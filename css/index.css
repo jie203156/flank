@@ -252,6 +252,10 @@ body {
   font-size: 0.2975206612rem;
   color: #a1a1a1;
 }
+.main .products ul .product a .info .other .mui-icon-chat {
+  font-size: 0.3305785124rem;
+  margin-right: 0.0826446281rem;
+}
 .main .Discount {
   height: 1.5289256198rem;
   width: 100%;

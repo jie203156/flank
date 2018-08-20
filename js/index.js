@@ -22,10 +22,16 @@ $(function() {
         $("div:nth-child(n+9)").slideToggle();
     })
 
+    //链接比价搜索
+    $(".getindexmenu").on("click", "div:nth-child(1)", function() {
+        location.href = "category.html";
+    });
+
     //链接省钱控
     $(".getindexmenu").on("click", "div:nth-child(2)", function() {
         location.href = "qzk-getmoneyctrl.html";
     });
+
 
     //链接白菜价
     $(".getindexmenu").on("click", "div:nth-child(4)", function() {

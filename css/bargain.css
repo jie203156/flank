@@ -164,6 +164,9 @@ i {
 .container {
   padding: 0;
 }
+.container .main {
+  position: relative;
+}
 .container .main .nav {
   background-color: #fff;
   margin-bottom: 0.1652892562rem;
@@ -258,6 +261,7 @@ i {
   color: #fff;
 }
 .container .main .smak {
+  position: absolute;
   width: 100%;
   height: 16.5289256198rem;
   background-color: #fff;

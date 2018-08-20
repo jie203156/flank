@@ -68,7 +68,8 @@ i {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -96,6 +97,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
 }
 .header .bottom .btn {
   height: 30px;
