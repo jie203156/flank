@@ -161,87 +161,45 @@ i {
   color: #666666;
 }
 
-html,
-body {
-  width: 100%;
-  box-sizing: border-box;
+.container {
+  padding: 0;
 }
-
-.main {
-  background-color: #f2f2f2;
-}
-.main .getindexmenu {
-  background-color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-}
-.main .getindexmenu div {
-  width: 25%;
-  height: 2.479338843rem;
-  display: flex;
-  justify-content: center;
-}
-.main .getindexmenu div a {
-  width: 1.652892562rem;
-  height: 100%;
+.container .main form {
+  padding: 0.3140495868rem 0.2479338843rem 0.867768595rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.3140495868rem;
-  color: #000;
 }
-.main .getindexmenu div a img {
-  width: 100%;
+.container .main form p {
+  font-size: 0.0826446281rem;
+  color: red;
+  opacity: 0;
 }
-.main .Sale {
-  margin-top: 0.0991735537rem;
+.container .main form input {
+  border-radius: 0;
+  height: 0.8925619835rem;
 }
-.main .Sale .title {
+.container .main form .gain {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 0.8760330579rem;
-  background-color: #ff9a19;
-  padding: 0 0.2479338843rem;
-  border-bottom: 0.041322314rem solid #ffc881;
 }
-.main .Sale .title p {
-  flex: 1;
-  color: #fff;
-  font-size: 0.3719008264rem;
+.container .main form .gain .randow {
+  flex-basis: 1.6115702479rem;
 }
-.main .Sale .title img {
-  width: 0.5123966942rem;
+.container .main form .gain .randow img {
+  widows: 100%;
 }
-.main .products {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
+.container .main form .gain .text {
+  flex-basis: 2.4380165289rem;
+  margin: 0rem 0.0826446281rem;
 }
-.main .products ul .product a {
-  display: flex;
+.container .main form .gain .btn-default {
+  flex-basis: 4.132231405rem;
+  margin: 0.2479338843rem 0rem;
+  background: linear-gradient(to right, white, #ccc);
+  border-radius: 0.1652892562rem;
 }
-.main .products ul .product a .price img {
-  width: 2.5867768595rem;
-  height: 3.1652892562rem;
-}
-.main .products ul .product a .info {
-  flex: 1;
-  padding: 0.4380165289rem;
-}
-.main .products ul .product a .info .title {
-  font-size: 0.3719008264rem;
-}
-.main .products ul .product a .info .title span {
-  color: #ff6c00;
-}
-.main .products ul .product a .info .other {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0.8925619835rem;
-  font-size: 0.2975206612rem;
-  color: #a1a1a1;
+.container .main form .email {
+  margin-top: 0.2479338843rem;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=register.css.map */
