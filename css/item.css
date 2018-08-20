@@ -227,8 +227,14 @@ i {
   border-bottom: 0.0082644628rem solid #dadada;
   align-items: center;
   justify-content: space-between;
+<<<<<<< HEAD
+  font-size: 0.3801652893rem; }
+.container .main .list li i {
+  display: none; }
+=======
   font-size: 0.3801652893rem;
 }
+>>>>>>> 86dcff577069fe61e04766819e2351f69c93e0dc
 .container .main .filter {
   padding: 0.2479338843rem;
   box-shadow: 0 0 0.2066115702rem 0.0495867769rem #ccc;
