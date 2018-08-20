@@ -40,10 +40,10 @@ Mmm.prototype = {
                 data: {
                     pageid: zhi
                 },
-                success: function(data) {
+                success: function(res) {
                     // console.log(data);
-                    var result = template("cartlist", data);
-                    $(".cartlist").html(result);
+                    var htmlstr = template("productlist", res);
+                    $(".products ul").html(htmlstr);
                 }
             })
 
@@ -56,10 +56,10 @@ Mmm.prototype = {
             data: {
                 pageid: 0
             },
-            success: function(data) {
+            success: function(res) {
                 // console.log(data);
-                var result = template("cartlist", data);
-                $(".cartlist").html(result);
+                var htmlstr = template("productlist", res);
+                $(".products ul").html(htmlstr);
             }
         })
     }
