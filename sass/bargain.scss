@@ -5,7 +5,7 @@
     
 
     .main{
-          
+          position: relative;
         .nav{
             background-color: #fff; 
             margin-bottom: pr(20);      
@@ -134,6 +134,7 @@
         }
 
         .smak{
+            position: absolute;
             width: 100%;
             height: pr(2000);
             background-color: #fff;

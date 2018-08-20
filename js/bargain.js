@@ -1,4 +1,5 @@
 $(function(){
+    
     //获取导航栏事件
     function title(){
         $.ajax({
@@ -25,7 +26,7 @@ $(function(){
         var tid = $(this).data("id");
         
         
-        
+        $(".smak").show();
         products(tid);
     })
     
@@ -41,8 +42,7 @@ $(function(){
                 console.log(res);
                 console.log(res.result[0].productImg);
                 
-
-                $(".smak").css({"height":0,"width":0});
+                $(".smak").hide();
                 var html = template("productslist",res);
                 $(".products").html(html);
                  
