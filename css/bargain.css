@@ -256,6 +256,14 @@ i {
   border: none;
   color: #fff;
 }
+.container .main .smak {
+  width: 100%;
+  height: 16.5289256198rem;
+  background-color: #fff;
+}
+.container .main .smak img {
+  width: 100%;
+}
 .container .back {
   position: fixed;
   right: 0.4958677686rem;

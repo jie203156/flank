@@ -54,20 +54,25 @@
                 </ul>
 
             </div>
+             <!-- 加载图 -->
+            <div class="smak">
+                    <img src="./images/timg (1).gif" alt="">
+            </div>
 
             <div class="products">
+                
                 <!-- 模板渲染 -->             
 
             </div>
 
-
+            
         </div>
 
         <!-- 尾部制作 -->
         <div class="footer">
             <div class="btnS">
-                <button>登录</button>
-                <button>注册</button>
+                <button><a href="./login.html">登录</a></button>
+                <button><a href="./register.html">注册</a></button>
                 <button class="btn">
                     <i class="fa fa-arrow-up" aria-hidden="true"></i> 返回顶部</button>
             </div>
@@ -84,6 +89,7 @@
         <div class="back">
             <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
         </div>
+
     </div>
 
     <!-- 导航条模板 -->
@@ -97,6 +103,7 @@
 
     <!-- 商品列表模板 -->
     <script type="text/html" id="productslist">
+       
         {{each result v i}}
         <div class="product">
             <div class="left">

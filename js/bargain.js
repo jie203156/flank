@@ -42,7 +42,7 @@ $(function(){
                 console.log(res.result[0].productImg);
                 
 
-                
+                $(".smak").css({"height":0,"width":0});
                 var html = template("productslist",res);
                 $(".products").html(html);
                  
