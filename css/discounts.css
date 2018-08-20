@@ -99,6 +99,7 @@ i {
   height: 0.7438016529rem;
   border-radius: 0.3719008264rem;
   border: none;
+  width: 100%;
   background-color: #f1f1f1;
 }
 .container .header .search input::placeholder {
@@ -158,6 +159,14 @@ i {
 }
 .container .footer .footerTxt p .web {
   color: #666666;
+}
+
+* {
+  touch-action: none;
+}
+
+body, html {
+  height: 100%;
 }
 
 .container .header .topNav {

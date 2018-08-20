@@ -99,6 +99,7 @@ i {
   height: 0.7438016529rem;
   border-radius: 0.3719008264rem;
   border: none;
+  width: 100%;
   background-color: #f1f1f1;
 }
 .container .header .search input::placeholder {
@@ -160,6 +161,17 @@ i {
   color: #666666;
 }
 
+* {
+  touch-action: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+.container .header {
+  flex-basis: 1.2396694215rem;
+}
 .container .header .topNav {
   background-color: #f4483e;
 }
@@ -173,7 +185,6 @@ i {
 }
 .container .main {
   background-color: #fff;
-  height: auto;
   flex: 1;
   position: relative;
 }
@@ -221,6 +232,24 @@ i {
   font-size: 20px;
   display: flex;
   align-items: center;
+}
+.container .hidden {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .hidden span {
+  color: #fff;
+}
+.container .hidden img {
+  width: 50%;
 }
 
 /*# sourceMappingURL=couponproduct.css.map */

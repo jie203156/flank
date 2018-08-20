@@ -4,8 +4,13 @@
     @return $p/121+rem;
 }
 
-.container{
+* { touch-action: none; }
+body,html{
+    height: 100%;
+}
+.container{ 
     .header{
+        flex-basis: pr(150);
         .topNav{
             background-color: #f4483e;
             .mui-icon-back{
@@ -20,7 +25,7 @@
     }
     .main{
         background-color: #fff;
-        height: auto;
+        // height: auto;
         flex: 1;
         position: relative;
         .hint{
@@ -70,6 +75,25 @@
                 align-items: center;
             }
         }
+    }
+    .hidden{
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            color: #fff;
+        }
+        img{
+            width: 50%;
+        }
+
     }
 }
 

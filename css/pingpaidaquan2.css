@@ -149,17 +149,20 @@ html, body {
 .main .content .pinban i {
   width: 20px;
   height: 20px;
-  background-color: red;
+  background-color: #c9c9c9;
   text-align: center;
   color: white;
 }
 .main .content .pinban i.tubiao {
-  background-color: #ff9314;
+  background-color: red;
 }
 .main .content .pinban i.tubiao1 {
-  background-color: #8adf5b;
+  background-color: #ff9314;
 }
 .main .content .pinban i.tubiao2 {
+  background-color: #8adf5b;
+}
+.main .content .pinban i.tubiao3 {
   background-color: #c9c9c9;
 }
 .main .content .pinban span {
