@@ -1,8 +1,10 @@
 $(function() {
 
-    mui('.mui-scroll-wrapper').scroll({
-        deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
-    });
+    //给导航栏的更多添加点击事件
+    $(".getindexmenu").on("click", "div:nth-child(8)", function() {
+        $("div:nth-child(n+9)").slideToggle();
+    })
+
 
     //导航栏
     $.ajax({
@@ -28,6 +30,7 @@ $(function() {
             $(".products ul").html(htmlstr);
         }
     })
+
 
 
 })

@@ -1,0 +1,99 @@
+@import "common.scss";
+
+@function pr($p) {
+    @return $p/121+rem;
+}
+
+* { touch-action: none; }
+body,html{
+    height: 100%;
+}
+.container{ 
+    .header{
+        flex-basis: pr(150);
+        .topNav{
+            background-color: #f4483e;
+            .mui-icon-back{
+                color: #fff;
+                font-size: pr(60);
+            }
+            .title{
+                color: #fff;
+                font-size: 0.5rem;
+            }
+        }
+    }
+    .main{
+        background-color: #fff;
+        // height: auto;
+        flex: 1;
+        position: relative;
+        .hint{
+            text-align: center;
+            padding-top: 3px;
+        }
+        .product{
+            display: flex;
+            border-bottom: 1px solid #ccc;
+            padding-top: 5px;
+            .info{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                .detail{
+                    display: flex;
+                    img{
+                        width: 30%;
+                        height: 30%;
+                        margin-right: 5px;
+                    }
+                    .text{
+                        flex: 1;
+                        p{
+                            color: #333;
+                            font-size: 16px;
+                        }
+                        .price{
+                            font-weight: 600;
+                        }
+                        
+                        
+                    }
+                }
+                .time{
+                    text-align: center;
+                    color: orange;
+                    margin: 5px 0px,
+                }
+            }
+            a{
+                text-decoration: none;
+                color: #ccc;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .hidden{
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            color: #fff;
+        }
+        img{
+            width: 50%;
+        }
+
+    }
+}
+
