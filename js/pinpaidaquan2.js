@@ -63,6 +63,16 @@ $(function () {
     }
 
 
+//    跳转商品详情页
+    $('.content1').on('click','#dianshi',function () {
+           var productId=$(this).data('id');
+           sessionStorage.setItem('ids',productId);
+           window.location.href=""
+
+
+    })
+
+
 
 
 
